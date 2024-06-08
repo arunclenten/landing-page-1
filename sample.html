@@ -1,186 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Dynamic Navigation</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box with Corner Box</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <style>
   body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
 }
 
-header {
-    position: fixed;
-    width: 100%;
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-    transition: top 0.3s;
-    z-index: 1000; /* Ensure header is on top */
+.container {
+  width: 300px;   /* Adjust the size of the container */
+  height: 200px;  /* Adjust the size of the container */
+  border: 2px solid black;  /* Optional border for the container */
+  position: relative;  /* Relative positioning for the container */
+  border-radius: 15px;  /* Rounded corners for the container */
+  overflow: hidden;  /* Ensures the corner box stays within the container */
+  background-color: white;
 }
 
-header nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-header nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-#initialNav {
-    top: 0;
-}
-
-#scrolledNav {
-    top: -60px;
-}
-
-#headerSection {
-    height: 100vh; /* Full screen height */
-    background: url('./assets/Home-1-A.png') no-repeat center center/cover;
-    position: relative;
-    overflow: hidden; /* Ensure the image doesn't overflow */
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    text-align: center;
-    z-index: 1; /* Ensure overlay is on top of the image */
-}
-
-#heroText {
-    display: inline-block;
-    text-align: center;
-}
-
-
-#heroText {
-    display: inline-block;
-    text-align: center;
-}
-
-#heroText span.highlight {
-    color: red; /* Change to desired color */
-    word-spacing: 10px; /* Add word spacing */
-}
-
-.new-line {
-    display: block;
-    width: 100%;
-    text-align: center;
+.corner-box {
+  width: 50px;  /* Adjust the size of the corner box */
+  height: 50px;  /* Adjust the size of the corner box */
+  background-color: red;  /* Change the background color as needed */
+  position: absolute;  /* Absolute positioning for the corner box */
+  top: 0;  /* Positioned at the top of the container */
+  right: 0;  /* Positioned at the right of the container */
+  border-bottom-left-radius: 15px;  /* Rounded bottom-left corner */
 }
 
 </style>
 <body>
-
-<!-- Bootstrap Navbar -->
-<nav class="navbar navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="#section1">Section 1</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#section2">Section 2</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#section3">Section 3</a>
-            </li>
-        </ul>
-    </div>
-</nav>
-
-<!-- Header Section with Background Image -->
-<section id="headerSection">
-    <div class="overlay">
-        <h1 id="heroText"></h1>
-    </div>
-</section>
-
-<!-- Content Sections -->
-<section id="section1">
-    <h1>Section 1</h1>
-    <p>Content for section 1.</p>
-</section>
-<section id="section2">
-    <h1>Section 2</h1>
-    <p>Content for section 2.</p>
-</section>
-<section id="section3">
-    <h1>Section 3</h1>
-    <p>Content for section 3.</p>
-</section>
-
-<!-- Bootstrap JS, Popper.js, and jQuery -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-<!-- Custom JS for typing effect -->
-<script>
-
-document.addEventListener('DOMContentLoaded', function() {
-    var headerSection = document.getElementById('headerSection');
-    headerSection.style.backgroundSize = '150%'; // Initial zoom level
-
-    // Delay the zoom-out effect slightly to ensure it's visible
-    setTimeout(function() {
-        headerSection.style.transition = 'background-size 2s';
-        headerSection.style.backgroundSize = '100%'; // Zoom out to normal size
-    }, 500); // Adjust the delay as needed
-
-    var text = "INNOVATION. INVESTMENT. GROWTH. GHL INDIA VENTURES ";
-    var heroText = document.getElementById('heroText');
-    heroText.innerHTML = '';
-
-    var words = text.split(' ');
-    var index = 0;
-
-    function typeWriter() {
-        if (index < words.length) {
-            var word = words[index++];
-            if (word === 'GHL') {
-                heroText.innerHTML += '<br><span class="ghl">' + word + '</span> ';
-            } else {
-                heroText.innerHTML += word + ' ';
-            }
-            setTimeout(typeWriter, 100); // Adjust the speed by changing the timeout value
-        }
-    }
-
-    typeWriter();
-});
-
-</script>
-
-</script>
+  <div class="container">
+    <div class="corner-box"></div>
+  </div>
 </body>
 </html>

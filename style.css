@@ -30,9 +30,15 @@ header nav ul li a {
   color: #fff;
   text-decoration: none;
 }
+.nav-link-login-icon {
+  display: inline-block;
+}
 
+.nav-link-login-text {
+  display: none;
+}
 .section-1 {
-  background-image: url(./assets/Login\ banner\ a.png);
+  background-image: url(./assets/home/GHL-V-WEB-LAYOUT-HOME_02.jpg);
   background-size: cover;
 }
 
@@ -43,14 +49,13 @@ header nav ul li a {
 #scrolledNav {
   top: -85px;
 }
-
 #headerSection {
-    height: 100vh; /* Full screen height */
-    background: url('./assets/Home-1-A.png') no-repeat center center/cover;
-    position: relative;
-    overflow: hidden; /* Ensure the image doesn't overflow */
+  width: 100%;
+   height: 100vh;/* Adjust height as needed */
+  background-size: 150%; /* Initial zoom level */
+  background-position: center;
+  transition: background-size 5s;
 }
-
 .overlay {
     position: absolute;
     top: 0;
@@ -65,8 +70,10 @@ header nav ul li a {
     text-align: center;
     z-index: 1; /* Ensure overlay is on top of the image */
 }
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+  color: #ddcbcb !important;
+}
 
-/* When the page loads, zoom out the background */
 .zoom-out {
     background-size: 120%; /* Adjust the value to control the zoom level */
 }
@@ -79,8 +86,9 @@ header nav ul li a {
 .navbar1 {
   border-bottom: 5px solid #cca776 !important;
   margin: auto;
-  width: 65%;
+  width: 77%;
   border-radius: 0px 0px 65px 65px !important;
+  background-color: black;
 }
 
 .header {
@@ -108,7 +116,6 @@ header nav ul li a {
  
 }
 #heroText span.ghl {
-  /* margin-left: 130px; */
   color: #e61e25;
 }
 .logo-image {
@@ -148,9 +155,11 @@ header nav ul li a {
   z-index: 1020; /* Higher than default to ensure it stays on top */
 }
 .box {
-  border: 1px solid;
+  border: 2px solid #393939;
   padding: 40px 20px;
-  border-radius: 10px;
+  border-radius: 37px;
+  background: #13131300;
+  line-height: 2;
 }
 .box-1 {
   background: #d7d7d7;
@@ -184,6 +193,8 @@ header nav ul li a {
   border: none;
   border-radius: 10px;
   position: relative;
+  box-shadow: 0px 0px 5px 4px #3d3d3d;
+  font-weight: 700;
 }
 
 .tablinks:hover {
@@ -201,7 +212,9 @@ header nav ul li a {
   transition: background-color 0.3s;
   position: absolute;
   top: 10%;
-  left: 10%;
+  left: 4%;
+ 
+
 }
 
 .active .dot {
@@ -209,11 +222,12 @@ header nav ul li a {
 }
 .imageborder {
   border-radius: 10px;
-  box-shadow: 2px -2px 9px 8px green;
+  box-shadow: 0px 0px 10px 10px #272424;
 }
 .tabcontent-box {
   background: black;
-  border-radius: 15px;
+  border-radius: 20px 0px 20px 0px;
+
 }
 .margin-auto {
   margin: auto;
@@ -226,20 +240,32 @@ header nav ul li a {
   border-radius: 0px 0px 30px 30px;
 }
 .text-with-background {
-  background-image: url(./assets/heading.png);
-  background-repeat: no-repeat;
-  display: inline-block;
-  background-size: cover;
-  padding: 10px 158px 10px 35px;
+  background: #fff;
+    width: 25%;
+    padding: 6px 0px 7px 60px;
+    border-radius: 0px 0px 13px 13px;
 }
 .text-dark-1 {
   color: black;
   font-size: 20px;
 }
+.text-dark-11 {
+  color: black;
+
+}
+.tabcontent {
+  display: none;
+}
+
+.tabcontent.active {
+  display: block;
+}
 
 /* footer css */
+
 .footer {
   background-color: #ffffff;
+  background-image: url(./assets/footer/Dot-Map.png);
   border-radius: 60px 60px 0 0;
   font-size: 15px;
   border-top: 9px solid #cca776;
@@ -257,7 +283,11 @@ header nav ul li a {
 }
 .align a {
   text-decoration: none;
-  color: black;
+ 
+}
+.align a:hover {
+  color: #e61e25;
+ 
 }
 .align ul li {
   list-style-type: none;
@@ -267,14 +297,17 @@ header nav ul li a {
   font-size: 16px;
 }
 .bold p {
-  font-weight: bold;
-  font-size: 13px;
+  font-weight: 700;
 }
 .social-media a img {
   width: 2%;
 }
 .footer-logo{
     width: 80%;
+}
+.footer-font-weight{
+  font-weight: 600;
+  color: #5d5b5b;
 }
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-collapse {
@@ -288,17 +321,55 @@ header nav ul li a {
     .mobile-size{
         font-size: medium !important;
     }
-    .ghl {
-        margin-left: 58px !important;
-    }
+ 
     .social-media a img {
         width: 5% !important;
     }
     .footer-logo{
         width: 36% !important;
     }
+    .tablinks {
+      background-color: black;
+      border: none;
+      color: #f2f2f2;
+      padding: 10px 50px;
+      cursor: pointer;
+      border: none;
+      border-radius: 10px;
+      position: relative;
+      box-shadow: 0px 0px 5px 4px #524b4b;
+      font-weight: 700;
+      width: 100% !important;
+  }
+  .text-with-background {
+    background: #fff;
+      width: 100% !important;
+      padding: 6px 0px 7px 60px;
+      border-radius: 0px 0px 13px 13px;
+  }
+  .fund-profile {
+    background: grey;
+    padding: 40px 10px 40px 10px !important;
+    border-radius: 0px 20px 20px 0px;
+    border-bottom: 5px solid #3b3a3a;
+    position: relative;
+    overflow: hidden;
 }
-@media (max-width: 768px) {
+.fund-profile-image {
+  position: absolute !important;
+  top: 10% !important;
+  right: 5% !important;
+  width: 91% !important;
+  height: 18% !important;
+}
+.fund-profile-box{
+  margin-top: 150px;
+}
+.Naman{
+  margin-bottom: 100px;
+}
+}
+@media  (max-width: 768px) {
     #initialNav{
         display: none; /* Hide scrolledNav on mobile */
     }
@@ -316,7 +387,9 @@ header nav ul li a {
 
     #scrolledNav {
         top: -10px !important;
-    }
+        /* border-bottom: 5px solid #cca776; */
+        box-shadow: 0px 7px 13px 0px #cca776;
+      }
     .navbar {
         margin: auto; 
         width: 100%;
@@ -328,8 +401,35 @@ header nav ul li a {
         width: 100%;
          border-radius: 0px !important;
     }
+    .nav-link-login-icon {
+      display: none;
+    }
+    
+    .nav-link-login-text {
+      display: inline-block;
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+    }
+    .box {
+     
+      line-height: 20px;
+  }
+  
+}
+@media (min-width:700px) and (max-width:789px){
+  .col-md-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 100% !important;
+}
+.text-with-background {
+  background: #fff;
+  width: 50%;
+  padding: 6px 0px 7px 60px;
+  border-radius: 0px 0px 13px 13px;
 
-
+}
 }
     /* Custom style for changing the navbar-toggler icon color to white */
     .navbar-light .navbar-toggler-icon {
@@ -345,3 +445,103 @@ header nav ul li a {
         border-radius: .25rem;
     }
  
+    button:focus,
+button:active {
+  outline: none; /* Ensures no outline appears on focus or active state */
+  border: none; /* Ensures no border appears on focus or active state */
+}
+
+/* mobilr view change in tab  */
+.tab-container {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.tab-container .col-md-3 {
+  display: inline-block;
+  float: none; /* Prevent columns from floating */
+}
+
+.tab-container button {
+  display: block;
+  white-space: normal; /* Allow button text to wrap */
+  width: 100%; /* Ensure buttons take full width of their containers */
+}
+
+
+@media (max-width: 768px) {
+  .tab-container {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+
+/* fund css */
+.fund-box{
+  border-block-end-color: red;
+  background: gray;
+  padding: 0px 15px 15px 15px;
+  border-radius: 0px 0px 25px 25px;
+  border-bottom: 3px solid #3b3a3a;
+  position: relative; 
+  overflow: hidden;
+}
+.fund-header {
+  text-align: center;
+  background: #3b3a3a;
+  padding: 12px 0px;
+  border-radius: 0px 0px 25px 25px;
+  color: #fff;
+}
+
+
+.corner-box {
+  width: 50px;
+  height: 50px;
+  background-color: #3b3a3a;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+ 
+  border-radius: 50px 0px 0px 0px;
+}
+.impact{
+  background: #323131;
+  color: #fff;
+}
+.fund-growth{
+  background-color: black;
+}
+.fund-manager{
+  position: relative;
+}
+.fund-profile-image{
+  position: absolute;
+  top: 38%;
+  right: 72%;
+  width: 25%;
+  height: 40%;
+  z-index: 1;
+  border-radius: 32px;
+}
+.fund-profile{
+  background: grey;
+  padding: 50px 0px 50px 126px;
+  border-radius: 0px 20px 20px 0px;
+    border-bottom: 5px solid #3b3a3a;
+    position: relative;
+    overflow: hidden;
+}
+.corner-box-1 {
+  width: 50px;
+  height: 50px;
+  background-color: #3b3a3a;
+  position: absolute;
+  bottom:0;
+  right: 0;
+ 
+  border-radius: 50px 0px 0px 0px;
+}
+.fund-profile-text{
+line-height: 2;
+}
