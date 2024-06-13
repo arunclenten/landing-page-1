@@ -1,53 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Box with Corner Box</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input with Image Inside Container</title>
+    <style>
+        .input-container {
+            position: relative;
+            display: inline-block;
+        }
+        .input-container input {
+            padding-left: 30px; /* Adjust padding to make room for the image */
+        }
+        .input-container img {
+            position: absolute;
+            left: 5px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 20px; /* Adjust size as needed */
+            height: 20px; /* Adjust size as needed */
+        }
+    </style>
 </head>
-<style>
-  body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  background-color: #f0f0f0;
-}
-
-.container {
-  width: 300px;   /* Adjust the size of the container */
-  height: 200px;  /* Adjust the size of the container */
-  border: 2px solid black;  /* Optional border for the container */
-  position: relative;  /* Relative positioning for the container */
-  border-radius: 15px;  /* Rounded corners for the container */
-  overflow: hidden;  /* Ensures the corner box stays within the container */
-  background-color: white;
-}
-
-.corner-box {
-  width: 50px;  /* Adjust the size of the corner box */
-  height: 50px;  /* Adjust the size of the corner box */
-  background-color: red;  /* Change the background color as needed */
-  position: absolute;  /* Absolute positioning for the corner box */
-  top: 0;  /* Positioned at the top of the container */
-  right: 0;  /* Positioned at the right of the container */
-  border-bottom-left-radius: 15px;  /* Rounded bottom-left corner */
-}
-
-</style>
 <body>
-  <div class="container">
-    <div class="corner-box"></div>
-  </div>
-  <div class="container">
-    <div class="col-md-6"></div>
-    <div class="col-md-6"></div>
-    <div class="col-md-6"></div>
-    <div class="col-md-6"></div>
-    <div class="col-md-6"></div>
-    <div class="col-md-6"></div>
-  </div>
+    <input type="text" id="numberInput" oninput="validateNumber(this)" maxlength="10">
+<script>
+    function validateNumber(input) {
+    // Remove any non-numeric characters from the input value
+    input.value = input.value.replace(/\D/g, '');
+}
+
+</script>
 </body>
 </html>

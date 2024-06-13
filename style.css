@@ -557,3 +557,78 @@ button:active {
 .fund-profile-text{
 line-height: 2;
 }
+
+/* login css */
+.login-row{
+  height: 100vh;
+}
+.login-logo{
+/* background-color: #EDEEF0; */
+background-color: #272424;
+padding: 200px 35px 0px 79px;
+}
+.login-div{
+  padding-top: 180px;
+  background-color: #919294;
+}
+.login-form{
+  background-color: black;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px 0px 25px 0px;
+}
+.login-title{
+  border-bottom: 2px solid #fff;
+}
+.login-number{
+  padding: 15px 75px 15px 51px;
+    border-radius: 10px;
+}
+.form-outline{
+position: relative;
+}
+.form-outline i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  left: 111px;
+  color: black;
+  font-size: x-large;
+}
+.login-form a{
+  color: #fff;
+  text-decoration: none;
+
+}
+
+
+.logo {
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+#login-form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#login-form h2 {
+    margin-bottom: 20px;
+}
+
+.input-group-text {
+    background-color: #ffffff;
+    border-right: none;
+}
+
+.input-group .form-control {
+    border-left: none;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
