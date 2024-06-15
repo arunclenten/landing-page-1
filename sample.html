@@ -3,33 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Input with Image Inside Container</title>
+    <title>Top Shadow Box</title>
     <style>
-        .input-container {
-            position: relative;
-            display: inline-block;
-        }
-        .input-container input {
-            padding-left: 30px; /* Adjust padding to make room for the image */
-        }
-        .input-container img {
-            position: absolute;
-            left: 5px;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 20px; /* Adjust size as needed */
-            height: 20px; /* Adjust size as needed */
+        .top-shadow-box {
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            border: 1px solid #ddd;
+            box-shadow: 0 -5px 10px -5px rgba(0, 0, 0, 0.5);
+            margin: 50px;
         }
     </style>
 </head>
 <body>
-    <input type="text" id="numberInput" oninput="validateNumber(this)" maxlength="10">
-<script>
-    function validateNumber(input) {
-    // Remove any non-numeric characters from the input value
-    input.value = input.value.replace(/\D/g, '');
-}
-
-</script>
+    <div class="top-shadow-box"></div>
 </body>
 </html>

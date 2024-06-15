@@ -38,7 +38,7 @@ header nav ul li a {
   display: none;
 }
 .section-1 {
-  background-image: url(./assets/home/GHL-V-WEB-LAYOUT-HOME_02.jpg);
+  background-image: url(./assets/home/GHL-V-WEB-LAYOUT-HOME_03.jpg);
   background-size: cover;
 }
 
@@ -58,7 +58,7 @@ header nav ul li a {
 }
 .overlay {
     position: absolute;
-    top: 0;
+    top: -45%;
     left: 0;
     right: 0;
     bottom: 0;
@@ -176,7 +176,8 @@ header nav ul li a {
   font-size: 20px;
 }
 .tab-content-bg {
-  background-color: rgb(50 49 49);
+  background-color: rgb(255 255 255);
+  box-shadow: 0 -4px 6px -2px rgba(0, 0, 0, 0.3);
 }
 .font-weight {
   font-weight: 700;

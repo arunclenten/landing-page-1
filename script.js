@@ -18,55 +18,7 @@ window.addEventListener("scroll", function () {
     }
 });
 
-function applyZoomEffect() {
-    var headerSection = document.getElementById("headerSection");
-    var windowWidth = window.innerWidth;
 
-    if (windowWidth <= 768) {
-        // Mobile view
-        headerSection.style.backgroundImage = "url('./assets/home/Innovation_Mobileview-Banner.png')";
-    } else {
-        // Desktop view
-        headerSection.style.backgroundImage = "url('./assets/home/Home-1-A.png')";
-    }
-
-    // Initial zoom level
-    headerSection.style.backgroundSize = "150%";
-
-    // Delay the zoom-out effect slightly to ensure it's visible
-    setTimeout(function () {
-        headerSection.style.backgroundSize = "100%"; // Zoom out to normal size
-    }, 500); // Adjust the delay as needed
-}
-
-// Apply the zoom effect when the page loads
-window.addEventListener("load", applyZoomEffect);
-
-// Reapply the zoom effect when the window is resized
-window.addEventListener("resize", applyZoomEffect);
-
-document.addEventListener("DOMContentLoaded", function () {
-    var text = "INNOVATION. INVESTMENT. GROWTH. GHL INDIA VENTURES ";
-    var heroText = document.getElementById("heroText");
-    heroText.innerHTML = "";
-
-    var words = text.split(" ");
-    var index = 0;
-
-    function typeWriter() {
-        if (index < words.length) {
-            var word = words[index++];
-            if (word === "GHL") {
-                heroText.innerHTML += '<br><span class="ghl">' + word + "</span> ";
-            } else {
-                heroText.innerHTML += word + " ";
-            }
-            setTimeout(typeWriter, 700); // Adjust the speed by changing the timeout value
-        }
-    }
-
-    typeWriter();
-});
 
 function openTab(evt, tabName) {
     // Declare all variables
