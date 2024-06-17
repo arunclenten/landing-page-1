@@ -14,6 +14,25 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
+  <style>
+    .invest-growth-section{
+      display: flex;
+      height: 100vh;
+    background-image: url('./assets/fund/GHL-V-WEB-LAYOUT-Fund2_03.jpg'); /* Replace 'your-image.jpg' with your image file */
+    background-size: cover;
+    background-position: center;
+    }
+    .fund-pad{
+      padding: 0px 50px 0px 0px;
+    }
+    .blog-heading{
+      background-color: gray;
+    color: White;
+    padding: 4px 50px 13px 50px;
+    font-size: 20px;
+    border-radius: 0px 0px 12px 12px;
+    }
+  </style>
   <body>
     <!-- Initial Navigation Bar  Start-->
     <header id="initialNav">
@@ -36,7 +55,7 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav font-weight">
               <li class="nav-item active">
-                <a class="nav-link" href="home.html"
+                <a class="nav-link" href="index.html"
                   >Home <span class="sr-only">(current)</span></a
                 >
               </li>
@@ -88,7 +107,7 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto font-weight">
               <li class="nav-item active">
-                <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="about.html">About Us</a>
@@ -124,20 +143,24 @@
         <h1 class="font-weight mobile-size" id="heroText"></h1>
       </div>
     </div>
-    <section class="fund-growth" >
-      <div class="container py-5">
-        <div class="row py-5 invest-growth-section">
+   
+    <section class="fund-growth">
+      <div class="text-center pb-5">
+        <span class="text-center blog-heading">FUND</span>
+      </div>
+      <div class="container invest-growth-section py-5">
+        <div class="row py-5 ">
           <div class="col-md-6">
-            <img
+            <!-- <img
               src="./assets/fund/GHL-V-WEB-LAYOUT-Fund_03.jpg"
               alt=""
               width="100%"
-            />
+            /> -->
           </div>
           <div class="col-md-6">
             <h2 class="font-weight text-white  mobile-size">LOOKING FOR THE <span class="secondary-color"> RIGHT FIT?</span></h2>
             <h2 class="font-weight text-white  mobile-size">WE <span class="secondary-color"> INVEST IN GROWTH </span></h2>
-            <p class="text-white">
+            <p class="text-white fund-pad">
               Early-stage companies being young and not fully matured, hold the
               promise of substantial growth and future returns, has lower
               valuations, allowing investors to acquire larger equity stakes
@@ -146,7 +169,7 @@
               or IPOs. Additionally, it grants access to cutting-edge
               technologies, disruptive business models, and emerging trends.
             </p>
-            <p class="text-white">
+            <p class="text-white fund-pad">
               Pre-IPO investments involve investing in a company before it goes
               public, typically through private placements. This allows
               investors to buy shares at lower valuations, potentially resulting
@@ -165,36 +188,36 @@
         </h2>
         <div class="row">
           <div class="col-md-4 mb-5">
-            <div class="fund-box">
+            <div class="fund-box pb-lg-5">
               <div class="corner-box"></div>
               <p class="fund-header">
                 <span class="h4">Fund Size</span>
               </p>
-              <p>
+              <p class="pt-lg-3">
                 INR 50 Cr (with Green shoe option for INR 50 Cr), offering ample
                 capacity for diversified investments.
               </p>
             </div>
           </div>
           <div class="col-md-4 mb-5">
-            <div class="fund-box">
+            <div class="fund-box pb-lg-5">
               <div class="corner-box"></div>
               <p class="fund-header">
                 <span class="h4">Fund Tenure</span>
               </p>
-              <p class="pb-4">
+              <p class="pb-4 pt-lg-3">
                 10 years, aligning with long-term investment horizons for
                 optimal returns.
               </p>
             </div>
           </div>
           <div class="col-md-4 ">
-            <div class="fund-box">
+            <div class="fund-box pb-lg-5">
               <div class="corner-box"></div>
               <p class="fund-header">
                 <span class="h4">Commitment</span>
               </p>
-              <p>
+              <p class="pt-lg-3">
                 Investors commit INR 1 Cr cumulatively over one or more
                 drawdowns, providing flexibility and scalability.
               </p>
@@ -244,7 +267,7 @@
     </section>
     <section>
         <h2 class="text-center font-weight mobile-size my-4">ESG <span class="secondary-color">IMPACT</span></h2>
-        <div style="background-image: url(./assets/fund/white-perspective-block-red-cube-middle.png); height: 100vh ;     background-repeat: no-repeat;
+        <div style="background-image: url(./assets/fund/GHL-V-WEB-LAYOUT-Fund.3jpg_04.jpg); height: 100vh ;     background-repeat: no-repeat;
         object-fit: cover;">
        
      
@@ -349,7 +372,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+<!-- <img src="./assets/fund/GHL-V-WEB-LAYOUT-Fund_02.jpg" alt=""> -->
     <script src="script.js"></script>
     <script>
       function applyZoomEffect() {
@@ -358,19 +381,13 @@
 
     if (windowWidth <= 768) {
         // Mobile view
-        headerSection.style.backgroundImage = "url('./assets/home/GHL-V-WEB-LAYOUT-HOME_08_01.jpg')";
+        headerSection.style.backgroundImage = "url('./assets/fund/GHL-V-WEB-LAYOUT-Fund_02.jpg')";
     } else {
         // Desktop view
-        headerSection.style.backgroundImage = "url('./assets/home/GHL-V-WEB-LAYOUT-HOME_08_01.jpg')";
+        headerSection.style.backgroundImage = "url('./assets/fund/GHL-V-WEB-LAYOUT-Fund_02.jpg')";
     }
 
-    // Initial zoom level
-    headerSection.style.backgroundSize = "150%";
-
-    // Delay the zoom-out effect slightly to ensure it's visible
-    setTimeout(function () {
-        headerSection.style.backgroundSize = "100%"; // Zoom out to normal size
-    }, 500); // Adjust the delay as needed
+ 
 }
 
 // Apply the zoom effect when the page loads
@@ -379,29 +396,9 @@ window.addEventListener("load", applyZoomEffect);
 // Reapply the zoom effect when the window is resized
 window.addEventListener("resize", applyZoomEffect);
 
-document.addEventListener("DOMContentLoaded", function () {
-    var text = "INNOVATION. INVESTMENT. GROWTH. GHL INDIA VENTURES ";
-    var heroText = document.getElementById("heroText");
-    heroText.innerHTML = "";
 
-    var words = text.split(" ");
-    var index = 0;
-
-    function typeWriter() {
-        if (index < words.length) {
-            var word = words[index++];
-            if (word === "GHL") {
-                heroText.innerHTML += '<br><span class="ghl">' + word + "</span> ";
-            } else {
-                heroText.innerHTML += word + " ";
-            }
-            setTimeout(typeWriter, 700); // Adjust the speed by changing the timeout value
-        }
-    }
-
-    typeWriter();
-});
-    </script>
+   
+   </script>
   </body>
 </html>
 

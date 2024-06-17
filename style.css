@@ -62,7 +62,7 @@ header nav ul li a {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    /* background: rgba(0, 0, 0, 0.5); Dark overlay */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -142,18 +142,18 @@ header nav ul li a {
 
 /* Header section end  */
 
-.btn {
+/* .btn {
   padding: 10px 20px;
-  font-size: 1.2em; /* Adjust the font size as needed */
-  background-color: #007bff; /* Button background color */
-  color: white; /* Button text color */
+  font-size: 1.2em; 
+  background-color: #007bff; 
+  color: white; 
   border: none;
   border-radius: 5px;
   text-decoration: none;
-}
-.btn:hover {
-  background-color: #0056b3; /* Button background color on hover */
-}
+} */
+/* .btn:hover {
+  background-color: #0056b3; 
+} */
 
 .box {
   border: 2px solid #393939;
@@ -176,8 +176,11 @@ header nav ul li a {
   font-size: 20px;
 }
 .tab-content-bg {
-  background-color: rgb(255 255 255);
-  box-shadow: 0 -4px 6px -2px rgba(0, 0, 0, 0.3);
+  /* background-color: rgb(255 255 255); */
+  /* box-shadow: 0 -4px 6px -2px rgba(0, 0, 0, 0.3); */
+  box-shadow: 0 -5px 10px -5px rgba(255, 0, 0, 0.5); /* Red shadow on top */
+  /* box-shadow: 0 -10px 10px 0px #272424,
+   0 11px 8px 0px #272424; */
 }
 .font-weight {
   font-weight: 700;
@@ -224,7 +227,10 @@ header nav ul li a {
 }
 .imageborder {
   border-radius: 10px;
-  box-shadow: 0px 0px 10px 10px #272424;
+  /* box-shadow: 0px 0px 10px 10px #272424; */
+  box-shadow: 0 -10px 10px 0px #272424,
+   0 11px 8px 0px #272424;
+
 }
 .tabcontent-box {
   background: black;
@@ -484,11 +490,11 @@ button:active {
 }
 
 /* fund css */
-.invest-growth-section{
+/* .invest-growth-section{
   border-width: 3px;
   border-style: dotted;
   border-color: #fff;
-}
+} */
 
 .fund-box{
   border-block-end-color: red;
