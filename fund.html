@@ -15,6 +15,12 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <style>
+      #backgroundContainer {
+      width: 100%;
+      height: 60vh; 
+      background-size: cover;
+      background-position: center;
+    }
     .invest-growth-section{
       display: flex;
       height: 100vh;
@@ -119,7 +125,7 @@
                 <a class="nav-link" href="blog.html">Blog</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="blog.html">Contact</a>
+                <a class="nav-link" href="contact.html">Contact</a>
               </li>
               <li>
                 <a class="nav-link-login-text" href="login.html">Login</a>
@@ -136,13 +142,12 @@
       <!-- Scrolled Navigation Bar  End -->
 
     <!-- Header Section with Background Image -->
-    <div id="headerSection">
-      <div class="overlay">
-        <!-- <h1 class="font-weight mobile-size" > INNOVATION. INVESTMENT. GROWTH. <br>
-        <span class="secondary-color ghl">GHL</span> INDIA VENTURES  </h1> -->
-        <h1 class="font-weight mobile-size" id="heroText"></h1>
-      </div>
-    </div>
+ 
+     <!-- Header Section with Background Image  Start-->
+     <div id="backgroundContainer">
+
+     </div>
+     <!-- Header Section with Background Image  End -->
    
     <section class="fund-growth">
       <div class="text-center pb-5">
@@ -375,26 +380,27 @@
 <!-- <img src="./assets/fund/GHL-V-WEB-LAYOUT-Fund_02.jpg" alt=""> -->
     <script src="script.js"></script>
     <script>
-      function applyZoomEffect() {
-    var headerSection = document.getElementById("headerSection");
-    var windowWidth = window.innerWidth;
+     
+function updateBackgroundImage() {
+  const container = document.getElementById('backgroundContainer');
+  const desktopImage = 'assets/fund/GHL-V-WEB-LAYOUT-Fund_02.jpg';
+  const mobileImage = 'assets/fund/GHL-V-WEB-LAYOUT-Fund_02.jpg';
 
-    if (windowWidth <= 768) {
-        // Mobile view
-        headerSection.style.backgroundImage = "url('./assets/fund/GHL-V-WEB-LAYOUT-Fund_02.jpg')";
-    } else {
-        // Desktop view
-        headerSection.style.backgroundImage = "url('./assets/fund/GHL-V-WEB-LAYOUT-Fund_02.jpg')";
-    }
-
- 
+  if (window.innerWidth <= 768) {
+    // For mobile view
+    container.style.backgroundImage = `url(${mobileImage})`;
+  } else {
+    // For desktop view
+    container.style.backgroundImage = `url(${desktopImage})`;
+  }
 }
 
-// Apply the zoom effect when the page loads
-window.addEventListener("load", applyZoomEffect);
+// Update background image on initial load
+updateBackgroundImage();
 
-// Reapply the zoom effect when the window is resized
-window.addEventListener("resize", applyZoomEffect);
+// Update background image on window resize
+window.addEventListener('resize', updateBackgroundImage);
+
 
 
    

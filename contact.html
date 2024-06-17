@@ -17,17 +17,25 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <style>
+        #backgroundContainer {
+      width: 100%;
+      height: 60vh; 
+      background-size: cover;
+      background-position: center;
+    }
     .blog-heading {
       background-color: gray;
       color: White;
       padding: 4px 50px 13px 50px;
       font-size: 20px;
       border-radius: 0px 0px 12px 12px;
+    
     }
     .contact-form {
       background-color: black;
       color: white;
-  
+      width: 100%;
+   
       border-radius: 10px;
     }
     .contact-form h2 {
@@ -39,6 +47,7 @@
     }
     .contect-header{
       font-weight: 900;
+      margin: 0px 0px -6px 0px;
     }
     .code-contact{
       /* color: #fff; */
@@ -47,9 +56,32 @@
     .contect-icon-div{
       margin-top: -38px;
     }
-    .contact-container{
-      /* background-color: blueviolet; */
+    .contact-form-div{
+      background: #babcbb;
     }
+    .contact-container{
+position: relative;
+    }
+    .contant-tagline{
+position: absolute;
+left: 43%;
+z-index: 1;
+    }
+    @media (min-width: 1050px) and (max-width:1450px){
+      /* .contact-form {
+      background-color: black;
+      color: white;
+      width: 70% !important;
+   margin-left: 110px;
+      border-radius: 10px;
+      } */
+}
+  .contact-a{
+    text-decoration: none;
+  }
+  .contact-a:hover{
+    text-decoration: none;
+  }
   </style>
   <body>
     <!-- Initial Navigation Bar  Start-->
@@ -139,7 +171,7 @@
                 <a class="nav-link" href="blog.html">Blog</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="blog.html">Contact</a>
+                <a class="nav-link" href="contact.html">Contact</a>
               </li>
               <li>
                 <a class="nav-link-login-text" href="login.html">Login</a>
@@ -154,17 +186,16 @@
     </header>
     <!-- Scrolled Navigation Bar  End -->
 
-    <!-- Header Section with Background Image -->
-    <div id="headerSection">
-      <div class="overlay">
-        <!-- <h1 class="font-weight mobile-size" > INNOVATION. INVESTMENT. GROWTH. <br>
-        <span class="secondary-color ghl">GHL</span> INDIA VENTURES  </h1> -->
-        <h1 class="font-weight mobile-size" id="heroText"></h1>
-      </div>
+    <!-- Header Section with Background Image  start-->
+    <div id="backgroundContainer">
+
     </div>
+    <!-- Header Section with Background Image  End -->
+
+
     <section class="contact-container">
       <div class="container-fluid contact-container">
-        <div class="text-center">
+        <div class="contant-tagline">
           <span class="text-center blog-heading">CONTACT</span>
         </div>
         <div class="row ">
@@ -175,9 +206,9 @@
               width="100%"
             />
           </div>
-          <div class="col-md-6  py-5">
-            <h3 class="text-center contect-header">Contact Us</h3>
-            <div class="contact-form">
+          <div class="col-md-6  py-lg-5 contact-form-div px-lg-5">
+            <h3 class="text-center contect-header pt-lg-5">Contact Us</h3>
+            <div class="contact-form ">
               <form class="contact-form-1">
                 <div class="form-row">
                   <div class="form-group col-md-6">
@@ -257,13 +288,34 @@
               </div>
            
             </div>
+
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6 ">
+                  <h5 class="text-danger">Investor Grievances
+                    </h5>
+                    <p >In case the grievance is not redressed the
+                      investor can take up the matter with SEBI
+                      through SCORES (SEBI COMPLAINTS REDRESS SYSTEM)
+                     </p>
+                     <a href="" class="text-dark contact-a"> https://scores.sebi.gov.in</a>
+                </div>
+                <div class="col-md-6">
+                  <h5 class="text-danger">Compliance Officer
+                   </h5>
+                   <p > Mr. Harish Kumar
+                    </p> 
+                    <a href="" class="text-dark contact-a">compliance@ghlindiaventures.com</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Footer Section Start -->
-    <section class="tab-content-bg">
+    <section class="">
       <footer class="footer">
         <div class="container">
           <div class="row">
@@ -346,34 +398,25 @@
 
     <script src="script.js"></script>
     <script>
-      function applyZoomEffect() {
-        var headerSection = document.getElementById("headerSection");
-        var windowWidth = window.innerWidth;
+   function updateBackgroundImage() {
+  const container = document.getElementById('backgroundContainer');
+  const desktopImage = 'assets/contact/GHL-V-WEB-LAYOUT-Contact_02.jpg';
+  const mobileImage = 'assets/contact/contact.png';
 
-        if (windowWidth <= 768) {
-          // Mobile view
-          headerSection.style.backgroundImage =
-            "url('./assets/contact/GHL-V-WEB-LAYOUT-Contact_02.jpg')";
-        } else {
-          // Desktop view
-          headerSection.style.backgroundImage =
-            "url('./assets/contact/GHL-V-WEB-LAYOUT-Contact_02.jpg')";
-        }
+  if (window.innerWidth <= 768) {
+    // For mobile view
+    container.style.backgroundImage = `url(${mobileImage})`;
+  } else {
+    // For desktop view
+    container.style.backgroundImage = `url(${desktopImage})`;
+  }
+}
 
-        // Initial zoom level
-        headerSection.style.backgroundSize = "150%";
+// Update background image on initial load
+updateBackgroundImage();
 
-        // Delay the zoom-out effect slightly to ensure it's visible
-        setTimeout(function () {
-          headerSection.style.backgroundSize = "100%"; // Zoom out to normal size
-        }, 500); // Adjust the delay as needed
-      }
-
-      // Apply the zoom effect when the page loads
-      window.addEventListener("load", applyZoomEffect);
-
-      // Reapply the zoom effect when the window is resized
-      window.addEventListener("resize", applyZoomEffect);
+// Update background image on window resize
+window.addEventListener('resize', updateBackgroundImage);
 
       
     </script>

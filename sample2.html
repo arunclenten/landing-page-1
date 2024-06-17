@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Carousel with Zoom</title>
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  
+  <div class="counter" data-final-value="100">
+    <i class="fas fa-users"></i>
+    <span class="count">0</span>
+</div>
+<div class="counter" data-final-value="250">
+    <i class="fas fa-chart-line"></i>
+    <span class="count">0</span>
+</div>
+<div class="counter" data-final-value="500">
+    <i class="fas fa-money-bill-wave"></i>
+    <span class="count">0</span>
+</div>
+
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- JavaScript -->
+<script>
+$(document).ready(function() {
+    $('.counter').each(function() {
+        var $this = $(this);
+        var finalValue = parseInt($this.attr('data-final-value'), 10);
+        var currentValue = 0;
+
+        // Start counter animation
+        $({ countValue: currentValue }).animate({ countValue: finalValue }, {
+            duration: 2000,  // Adjust duration as needed
+            easing: 'linear',
+            step: function() {
+                $this.find('.count').text(Math.floor(this.countValue));
+            },
+            complete: function() {
+                $this.find('.count').text(finalValue); // Ensure final value is set correctly
+            }
+        });
+    });
+});
+
+
+</script>
+
+
+
+
+
+  
+
+</body>
+</html>

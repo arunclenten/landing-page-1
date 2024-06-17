@@ -1,9 +1,10 @@
 window.addEventListener("scroll", function () {
     var initialNav = document.getElementById("initialNav");
     var scrolledNav = document.getElementById("scrolledNav");
-    var headerSection = document.getElementById("headerSection");
+    var headerSection = document.getElementById("carouselExampleIndicators");
+   
     var headerBottom = headerSection.getBoundingClientRect().bottom;
-
+ 
     if (window.innerWidth > 768) {
         // Apply scroll behavior only on larger screens
         if (headerBottom <= 0) {
@@ -17,7 +18,25 @@ window.addEventListener("scroll", function () {
         initialNav.style.top = "15px"; // Ensure initialNav is always visible on mobile
     }
 });
+window.addEventListener("scroll", function () {
+  var initialNav = document.getElementById("initialNav");
+  var scrolledNav = document.getElementById("scrolledNav");
+  var backgroundContainer =document.getElementById("backgroundContainer");
+  var headerBottom1 = backgroundContainer.getBoundingClientRect().bottom;
 
+  if (window.innerWidth > 768) {
+      // Apply scroll behavior only on larger screens
+      if (headerBottom1 <= 0) {
+          initialNav.style.top = "-85px";
+          scrolledNav.style.top = "0";
+      } else {
+          initialNav.style.top = "15px";
+          scrolledNav.style.top = "-85px";
+      }
+  } else {
+      initialNav.style.top = "15px"; // Ensure initialNav is always visible on mobile
+  }
+});
 
 
 function openTab(evt, tabName) {
