@@ -1,25 +1,23 @@
-
-
 @font-face {
-  font-family: 'Neuzeit Grotesk';
-  src: url('/fonts/NeuzeitGrotesk-Regular.woff2') format('woff2'),
-       url('/fonts/NeuzeitGrotesk-Regular.woff') format('woff'),
-       url('/fonts/NeuzeitGrotesk-Regular.ttf') format('truetype');
+  font-family: "Neuzeit Grotesk";
+  src: url("/fonts/NeuzeitGrotesk-Regular.woff2") format("woff2"),
+    url("/fonts/NeuzeitGrotesk-Regular.woff") format("woff"),
+    url("/fonts/NeuzeitGrotesk-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Neuzeit Grotesk';
-  src: url('/fonts/NeuzeitGrotesk-Bold.woff2') format('woff2'),
-       url('/fonts/NeuzeitGrotesk-Bold.woff') format('woff'),
-       url('/fonts/NeuzeitGrotesk-Bold.ttf') format('truetype');
+  font-family: "Neuzeit Grotesk";
+  src: url("/fonts/NeuzeitGrotesk-Bold.woff2") format("woff2"),
+    url("/fonts/NeuzeitGrotesk-Bold.woff") format("woff"),
+    url("/fonts/NeuzeitGrotesk-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 
 body {
-  font-family: 'Neuzeit Grotesk', sans-serif;
+  font-family: "Neuzeit Grotesk", sans-serif;
 }
 /* Header section start */
 header {
@@ -57,7 +55,7 @@ header nav ul li a {
   background-image: url(./assets/home/GHL-V-WEB-LAYOUT-HOME_03.jpg);
   background-size: cover;
 }
-.home-section{
+.home-section {
   background: black;
 }
 #initialNav {
@@ -69,33 +67,36 @@ header nav ul li a {
 }
 #headerSection {
   width: 100%;
-   height: 100vh;/* Adjust height as needed */
+  height: 100vh; /* Adjust height as needed */
   background-size: 150%; /* Initial zoom level */
   background-position: center;
   transition: background-size 5s;
 }
 .overlay {
-    position: absolute;
-    top: -45%;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    /* background: rgba(0, 0, 0, 0.5); Dark overlay */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    text-align: center;
-    z-index: 1; /* Ensure overlay is on top of the image */
+  position: absolute;
+  top: -45%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background: rgba(0, 0, 0, 0.5); Dark overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  z-index: 1; /* Ensure overlay is on top of the image */
 }
-.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
   color: #ddcbcb !important;
 }
 .sticky-top {
   z-index: 1020; /* Higher than default to ensure it stays on top */
 }
 .zoom-out {
-    background-size: 120%; /* Adjust the value to control the zoom level */
+  background-size: 120%; /* Adjust the value to control the zoom level */
 }
 
 .navbar {
@@ -132,8 +133,8 @@ header nav ul li a {
   color: gray;
 }
 .header-logo-2 {
-  margin-left: 25px;
- 
+  /* margin-left: 25px; */
+  margin-top: 10px;
 }
 #heroText span.ghl {
   color: #e61e25;
@@ -160,7 +161,6 @@ header nav ul li a {
 
 /* Header section end  */
 
-
 .box {
   border: 2px solid #393939;
   padding: 40px 20px;
@@ -176,6 +176,7 @@ header nav ul li a {
 .color {
   color: #cca776;
   font-size: larger;
+  font-weight: 700;
 }
 .color1 {
   color: black;
@@ -183,11 +184,7 @@ header nav ul li a {
   font-size: 20px;
 }
 .tab-content-bg {
-  /* background-color: rgb(255 255 255); */
   box-shadow: 0 -8px 6px -2px rgba(0, 0, 0, 0.3);
-
-  /* box-shadow: 0 -10px 10px 0px #272424,
-   0 11px 8px 0px #272424; */
 }
 .font-weight {
   font-weight: 700;
@@ -225,24 +222,15 @@ header nav ul li a {
   position: absolute;
   top: 10%;
   left: 4%;
- 
-
 }
 
 .active .dot {
   background-color: green;
 }
-.imageborder {
-  border-radius: 10px;
-  /* box-shadow: 0px 0px 10px 10px #272424; */
-  box-shadow: 0 -10px 10px 0px #272424,
-   0 11px 8px 0px #272424;
 
-}
 .tabcontent-box {
   background: black;
-  border-radius: 20px 0px 20px 0px;
-
+  border-radius: 20px 20px 20px 20px;
 }
 .margin-auto {
   margin: auto;
@@ -256,9 +244,9 @@ header nav ul li a {
 }
 .text-with-background {
   background: #fff;
-    width: 25%;
-    padding: 15px 0px 1px 0px;
-    border-radius: 0px 0px 50px 50px;
+  width: 25%;
+  padding: 3px 0px 1px 0px;
+  border-radius: 0px 0px 40px 40px;
 }
 .text-dark-1 {
   color: black;
@@ -266,7 +254,6 @@ header nav ul li a {
 }
 .text-dark-11 {
   color: black;
-
 }
 .tabcontent {
   display: none;
@@ -293,16 +280,14 @@ header nav ul li a {
   font-weight: bold;
   font-size: 20px;
 }
-.secondary-color{
-    color: #e61e25;
+.secondary-color {
+  color: #e61e25;
 }
 .align a {
   text-decoration: none;
- 
 }
 .align a:hover {
   color: #e61e25;
- 
 }
 .align ul li {
   list-style-type: none;
@@ -317,17 +302,16 @@ header nav ul li a {
 .social-media a img {
   width: 2%;
 }
-.footer-logo{
-    width: 80%;
+.footer-logo {
+  width: 80%;
 }
-.footer-font-weight{
-  font-weight: 600;
+.footer-font-weight {
+  /* font-weight: 600; */
   color: #212529;
 }
-.footer-font-weight-1{
-  font-weight: 600;
+.footer-font-weight-1 {
+  /* font-weight: 600; */
   color: #212529;
-
 }
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-collapse {
@@ -337,39 +321,39 @@ header nav ul li a {
     justify-content: center;
   }
 }
-@media (min-width: 320px) and (max-width: 600px){
-    .mobile-size{
-        font-size: medium !important;
-    }
-    .mobile-size1{
-      font-size: 21px !important;
+@media (min-width: 320px) and (max-width: 600px) {
+  .mobile-size {
+    font-size: medium !important;
   }
- 
-    .social-media a img {
-        width: 5% !important;
-    }
-    .footer-logo{
-        width: 36% !important;
-    }
-    .tablinks {
-      background-color: black;
-      border: none;
-      color: #f2f2f2;
-      padding: 10px 50px;
-      cursor: pointer;
-      border: none;
-      border-radius: 10px;
-      position: relative;
-      box-shadow: 0px 0px 5px 4px #524b4b;
-      font-weight: 700;
-      width: 100% !important;
+  .mobile-size1 {
+    font-size: 21px !important;
+  }
+
+  .social-media a img {
+    width: 5% !important;
+  }
+  .footer-logo {
+    width: 36% !important;
+  }
+  .tablinks {
+    background-color: black;
+    border: none;
+    color: #f2f2f2;
+    padding: 10px 50px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0px 0px 5px 4px #524b4b;
+    font-weight: 700;
+    width: 100% !important;
   }
   .text-with-background {
     background: #fff;
-      width: 100% !important;
-      /* padding: 6px 0px 7px 60px; */
-      border-radius: 0px 0px 50px 50px;
-      margin-bottom: 30px;
+    width: 100% !important;
+    /* padding: 6px 0px 7px 60px; */
+    border-radius: 0px 0px 50px 50px;
+    margin-bottom: 30px;
   }
   .fund-profile {
     background: grey;
@@ -378,92 +362,91 @@ header nav ul li a {
     border-bottom: 5px solid #3b3a3a;
     position: relative;
     overflow: hidden;
-}
-.fund-profile-image {
-  position: absolute !important;
-  top: 10% !important;
-  right: 5% !important;
-  width: 91% !important;
-  height: 18% !important;
-}
-.fund-profile-box{
-  margin-top: 150px;
-}
-.Naman{
-  margin-bottom: 100px;
-}
-.text-dark-1 {
-  color: black;
-  font-size: 16px !important;
-}
-.footer {
-  background-color: #ffffff;
-  background-image: url(./assets/footer/Dot-Map.png);
-  border-radius: 60px 60px 0 0;
-  font-size: 13px;
-  border-top: 9px solid #cca776;
-}
-.footer-font-weight-1{
-  font-weight: 600;
-  color: #212529;
-  font-size: 9px;
-}
-}
-@media  (max-width: 768px) {
-    #initialNav{
-        display: none; /* Hide scrolledNav on mobile */
-    }
-
-    header nav ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    header nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    #scrolledNav {
-        top: -10px !important;
-        /* border-bottom: 5px solid #cca776; */
-        box-shadow: 0px 7px 13px 0px #cca776;
-      }
-    .navbar {
-        margin: auto; 
-        width: 100%;
-     border-radius: 0px;
-    }
-    .navbar1 {
-        border-bottom: 0 !important; 
-        margin: 0; 
-        width: 100%;
-         border-radius: 0px !important;
-    }
-    .nav-link-login-icon {
-      display: none;
-    }
-    
-    .nav-link-login-text {
-      display: inline-block;
-      color: white;
-      text-decoration: none;
-      padding: 0.5rem 1rem;
-    }
-    .box {
-     
-      line-height: 20px;
   }
-  
+
+  .fund-profile-box {
+    margin-top: 150px;
+  }
+  .Naman {
+    margin-bottom: 100px;
+  }
+  .text-dark-1 {
+    color: black;
+    font-size: 16px !important;
+  }
+  .footer {
+    background-color: #ffffff;
+    background-image: url(./assets/footer/Dot-Map.png);
+    border-radius: 60px 60px 0 0;
+    font-size: 13px;
+    border-top: 9px solid #cca776;
+  }
+  .footer-font-weight-1 {
+    font-weight: 600;
+    color: #212529;
+    font-size: 9px;
+  }
+  .blog-heading {
+    background-color: gray;
+    color: White;
+    padding: 4px 30px 5px 30px !important;
+    font-size: 16px !important;
+    border-radius: 0px 0px 12px 12px;
+  }
 }
-@media (min-width:700px) and (max-width:789px){
+@media (max-width: 768px) {
+  #initialNav {
+    display: none; /* Hide scrolledNav on mobile */
+  }
+
+  header nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  #scrolledNav {
+    top: -10px !important;
+    /* border-bottom: 5px solid #cca776; */
+    box-shadow: 0px 3px 10px 0px #cca776;
+  }
+  .navbar {
+    margin: auto;
+    width: 100%;
+    border-radius: 0px;
+  }
+  .navbar1 {
+    border-bottom: 0 !important;
+    margin: 0;
+    width: 100%;
+    border-radius: 0px !important;
+  }
+  .nav-link-login-icon {
+    display: none;
+  }
+
+  .nav-link-login-text {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+  }
+  .box {
+    line-height: 20px;
+  }
+}
+@media (min-width: 700px) and (max-width: 789px) {
   .col-md-3 {
     -ms-flex: 0 0 25%;
     flex: 0 0 25%;
     max-width: 100% !important;
-}
-/* .text-with-background {
+  }
+  /* .text-with-background {
   background: #fff;
   width: 50%;
   padding: 6px 0px 7px 60px;
@@ -471,21 +454,59 @@ header nav ul li a {
 
 } */
 }
-    /* Custom style for changing the navbar-toggler icon color to white */
-    .navbar-light .navbar-toggler-icon {
-        background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba(255, 255, 255, 1)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
-    
-    }
-    .navbar-toggler {
-        padding: .25rem .75rem;
-        font-size: 1.25rem;
-        /* line-height: 1; */
-        background-color: transparent;
-        border: none !important;
-        border-radius: .25rem;
-    }
- 
-    button:focus,
+.login-text{
+  color: #cca776 !important;
+}
+.login-text:hover{
+text-decoration: none;
+}
+/* Custom style for changing the navbar-toggler icon color to white */
+.navbar-light .navbar-toggler-icon {
+  background-image: none;
+  margin-top: 10px;
+}
+.navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  /* line-height: 1; */
+  background-color: transparent;
+  border: none !important;
+  border-radius: 0.25rem;
+}
+
+
+.navbar-light .navbar-toggler {
+  color: rgba(0, 0, 0, .5);
+  border-color: rgba(0, 0, 0, .1);
+  margin-top: 10px;
+}
+
+
+  .icon-close::before {
+  content: "\f00d";
+  font-size: 20px;
+  color: #fff;
+}
+.icon-bars::before {
+  content: "\f0c9";
+  color: #fff;
+}
+  .navbar-toggler-icon {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 1.5em;
+    display: inline-block;
+  }
+  
+  .icon-bars::before {
+    content: "\f0c9"; /* Font Awesome icon for bars */
+  }
+  
+  .icon-close::before {
+    content: "\f00d"; /* Font Awesome icon for "X" */
+  }
+
+button:focus,
 button:active {
   outline: none; /* Ensures no outline appears on focus or active state */
   border: none; /* Ensures no border appears on focus or active state */
@@ -508,7 +529,6 @@ button:active {
   width: 100%; /* Ensure buttons take full width of their containers */
 }
 
-
 @media (max-width: 768px) {
   .tab-container {
     display: flex;
@@ -523,13 +543,13 @@ button:active {
   border-color: #fff;
 } */
 
-.fund-box{
+.fund-box {
   border-block-end-color: red;
   background: gray;
   padding: 0px 15px 15px 15px;
   border-radius: 0px 0px 25px 25px;
   border-bottom: 3px solid #3b3a3a;
-  position: relative; 
+  position: relative;
   overflow: hidden;
 }
 .fund-header {
@@ -540,7 +560,6 @@ button:active {
   color: #fff;
 }
 
-
 .corner-box {
   width: 50px;
   height: 50px;
@@ -548,78 +567,78 @@ button:active {
   position: absolute;
   bottom: 0;
   right: 0;
- 
+
   border-radius: 50px 0px 0px 0px;
 }
-.impact{
+.impact {
   background: #323131;
   color: #fff;
 }
-.fund-growth{
+.fund-growth {
   background-color: black;
 }
-.fund-manager{
+.fund-manager {
   position: relative;
 }
-.fund-profile-image{
+.fund-profile-image {
   position: absolute;
   top: 38%;
   right: 72%;
-  width: 25%;
+  /* width: 25%; */
   height: 40%;
   z-index: 1;
   border-radius: 32px;
 }
-.fund-profile{
+.fund-profile {
   background: grey;
   padding: 50px 0px 50px 126px;
   border-radius: 0px 20px 20px 0px;
-    border-bottom: 5px solid #3b3a3a;
-    position: relative;
-    overflow: hidden;
+  border-bottom: 5px solid #3b3a3a;
+  position: relative;
+  overflow: hidden;
 }
 .corner-box-1 {
   width: 50px;
   height: 50px;
   background-color: #3b3a3a;
   position: absolute;
-  bottom:0;
+  bottom: 0;
   right: 0;
- 
+
   border-radius: 50px 0px 0px 0px;
 }
-.fund-profile-text{
-line-height: 2;
+.fund-profile-text {
+  line-height: 2;
 }
 
 /* login css */
-.login-row{
+.login-row {
   height: 100vh;
 }
-.login-logo{
-/* background-color: #EDEEF0; */
-background-color: #272424;
-padding: 200px 35px 0px 79px;
+.login-logo {
+  /* background-color: #EDEEF0; */
+  background-color: #272424;
+  padding: 200px 35px 0px 79px;
 }
-.login-div{
+.login-div {
   padding-top: 180px;
   background-color: #919294;
 }
-.login-form{
+.login-form {
   background-color: black;
   color: #fff;
   border-radius: 10px;
   padding: 10px 0px 25px 0px;
 }
-.login-title{
+.login-title {
   border-bottom: 2px solid #fff;
 }
-.login-number{
+.login-number {
   padding: 15px 75px 15px 51px;
-    border-radius: 10px;
+  border-radius: 10px;
 }
-.form-outline{
-position: relative;
+.form-outline {
+  position: relative;
 }
 .form-outline i {
   position: absolute;
@@ -630,39 +649,46 @@ position: relative;
   color: black;
   font-size: x-large;
 }
-.login-form a{
+.login-form a {
   color: #fff;
   text-decoration: none;
-
 }
 
-
 .logo {
-    max-width: 200px;
-    margin: 0 auto;
+  max-width: 200px;
+  margin: 0 auto;
 }
 
 #login-form {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 #login-form h2 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .input-group-text {
-    background-color: #ffffff;
-    border-right: none;
+  background-color: #ffffff;
+  border-right: none;
 }
 
 .input-group .form-control {
-    border-left: none;
+  border-left: none;
 }
 
 .btn-block {
-    display: block;
-    width: 100%;
+  display: block;
+  width: 100%;
+}
+
+
+@media (min-width:1024px) and (max-width:1050px) {
+  .navbar-expand-lg .navbar-nav {
+      -ms-flex-direction: row;
+      flex-direction: row;
+      font-size: 12px;
+  }
 }

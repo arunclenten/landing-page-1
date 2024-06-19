@@ -13,56 +13,24 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="home.css">
   </head>
-  <style>
-      #backgroundContainer {
-      width: 100%;
-      height: 60vh; 
-      background-size: cover;
-      background-position: center;
-    }
-    .invest-growth-section{
-      display: flex;
-      height: 100vh;
-    background-image: url('./assets/fund/GHL-V-WEB-LAYOUT-Fund2_03.jpg'); /* Replace 'your-image.jpg' with your image file */
-    background-size: cover;
-    background-position: center;
-    }
-    .fund-pad{
-      padding: 0px 50px 0px 0px;
-    }
-    .blog-heading{
-      background-color: gray;
-    color: White;
-    padding: 4px 50px 13px 50px;
-    font-size: 20px;
-    border-radius: 0px 0px 12px 12px;
-    }
-  </style>
   <body>
     <!-- Initial Navigation Bar  Start-->
     <header id="initialNav">
       <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container bg-dark navbar-1">
-          <a class="navbar-brand logo-image" href="#">
+          <a class="navbar-brand logo-image" href="index.html">
             <img src="./assets/footer/logoghl.webp" alt="Logo" width="100px" />
           </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon icon-bars"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav font-weight">
-              <li class="nav-item active">
+              <li class="nav-item ">
                 <a class="nav-link" href="index.html"
-                  >Home <span class="sr-only">(current)</span></a
+                  >Home </a
                 >
               </li>
               <li class="nav-item">
@@ -79,7 +47,7 @@
               </li>
             </ul>
           </div>
-          <a class="nav-link logo-image1" href="#"
+          <a class="nav-link logo-image1" href="login.html"
             ><i class="fa-solid fa-arrow-right-to-bracket text-dark"></i
           ></a>
         </div>
@@ -91,7 +59,7 @@
     <header id="scrolledNav">
       <nav class="navbar navbar-expand-lg navbar-light sticky-top navbar1">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="fund.html">
             <img
               src="./assets/header/GHL_logo.png"
               alt="Logo"
@@ -99,21 +67,13 @@
               width="100px"
             />
           </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon icon-bars"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto font-weight">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              <li class="nav-item ">
+                <a class="nav-link" href="index.html">Home </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="about.html">About Us</a>
@@ -128,11 +88,11 @@
                 <a class="nav-link" href="contact.html">Contact</a>
               </li>
               <li>
-                <a class="nav-link-login-text" href="login.html">Login</a>
+                <a class="nav-link-login-text login-text" href="login.html">Login</a>
               </li>
             </ul>
           </div>
-          <a class="nav-link nav-link-login-icon" href="#">
+          <a class="nav-link nav-link-login-icon" href="login.html">
             <i class="fa-solid fa-arrow-right-to-bracket text-white"></i>
           </a>
         
@@ -149,38 +109,23 @@
      </div>
      <!-- Header Section with Background Image  End -->
    
-    <section class="fund-growth">
+     <section class="fund-growth ">
       <div class="text-center pb-5">
         <span class="text-center blog-heading">FUND</span>
       </div>
-      <div class="container invest-growth-section py-5">
-        <div class="row py-5 ">
-          <div class="col-md-6">
-            <!-- <img
-              src="./assets/fund/GHL-V-WEB-LAYOUT-Fund_03.jpg"
-              alt=""
-              width="100%"
-            /> -->
+      <div class="container invest-growth-section py-5 space">
+        <div class="row py-lg-5">
+          <div class="col-md-6 img-container">
+            <img src="./assets/fund/fund-growth-mobile.png" alt="Mobile View Image" /> <!-- Replace with your mobile image file -->
           </div>
-          <div class="col-md-6">
-            <h2 class="font-weight text-white  mobile-size">LOOKING FOR THE <span class="secondary-color"> RIGHT FIT?</span></h2>
-            <h2 class="font-weight text-white  mobile-size">WE <span class="secondary-color"> INVEST IN GROWTH </span></h2>
+          <div class="col-md-6 text-container">
+            <h2 class="font-weight text-white mobile-size">LOOKING FOR THE <span class="secondary-color"> RIGHT FIT?</span></h2>
+            <h2 class="font-weight text-white mobile-size">WE <span class="secondary-color"> INVEST IN GROWTH </span></h2>
             <p class="text-white fund-pad">
-              Early-stage companies being young and not fully matured, hold the
-              promise of substantial growth and future returns, has lower
-              valuations, allowing investors to acquire larger equity stakes
-              with smaller investments. Investing early provides significant
-              influence and opportunities for early exits through acquisitions
-              or IPOs. Additionally, it grants access to cutting-edge
-              technologies, disruptive business models, and emerging trends.
+              Early-stage companies being young and not fully matured, hold the promise of substantial growth and future returns, has lower valuations, allowing investors to acquire larger equity stakes with smaller investments. Investing early provides significant influence and opportunities for early exits through acquisitions or IPOs. Additionally, it grants access to cutting-edge technologies, disruptive business models, and emerging trends.
             </p>
             <p class="text-white fund-pad">
-              Pre-IPO investments involve investing in a company before it goes
-              public, typically through private placements. This allows
-              investors to buy shares at lower valuations, potentially resulting
-              in high returns post-IPO. Pre-IPO investments offer early
-              liquidity events and access to promising companies before they
-              reach the public market.
+              Pre-IPO investments involve investing in a company before it goes public, typically through private placements. This allows investors to buy shares at lower valuations, potentially resulting in high returns post-IPO. Pre-IPO investments offer early liquidity events and access to promising companies before they reach the public market.
             </p>
           </div>
         </div>
@@ -188,7 +133,7 @@
     </section>
     <section>
       <div class="container">
-        <h2 class="py-5 text-center font-weight mobile-size">
+        <h2 class="py-lg-5 py-3 text-center font-weight mobile-size">
           <span class="secondary-color"> BEYOND CAPITAL ,</span> WE EQUIPPED WITH STRAITS
         </h2>
         <div class="row">
@@ -196,9 +141,9 @@
             <div class="fund-box pb-lg-5">
               <div class="corner-box"></div>
               <p class="fund-header">
-                <span class="h4">Fund Size</span>
-              </p>
-              <p class="pt-lg-3">
+                <span class="fund-boxmodel">Fund Size</span>
+              </p> 
+              <p class="pt-lg-3 text-white">
                 INR 50 Cr (with Green shoe option for INR 50 Cr), offering ample
                 capacity for diversified investments.
               </p>
@@ -208,9 +153,9 @@
             <div class="fund-box pb-lg-5">
               <div class="corner-box"></div>
               <p class="fund-header">
-                <span class="h4">Fund Tenure</span>
+                <span class="fund-boxmodel">Fund Tenure</span>
               </p>
-              <p class="pb-4 pt-lg-3">
+              <p class="pb-4 pt-lg-3 text-white">
                 10 years, aligning with long-term investment horizons for
                 optimal returns.
               </p>
@@ -220,9 +165,9 @@
             <div class="fund-box pb-lg-5">
               <div class="corner-box"></div>
               <p class="fund-header">
-                <span class="h4">Commitment</span>
+                <span class="fund-boxmodel">Commitment</span>
               </p>
-              <p class="pt-lg-3">
+              <p class="pt-lg-3 text-white">
                 Investors commit INR 1 Cr cumulatively over one or more
                 drawdowns, providing flexibility and scalability.
               </p>
@@ -232,11 +177,11 @@
       </div>
     </section>
     <section>
-      <div class="container py-5 fund-manager">
+      <div class="container py-lg-5 pt-4 fund-manager">
         <h2 class="text-center font-weight mobile-size">FUND MANAGER <span class="secondary-color">SPEAKS </span></h2>
         <p class="text-center font-weight mobile-size Naman">Mr. Naman Dhamija</p>
         <div class="row py-lg-4 ">
-          <img src="./assets/home/close-up-coins-black-background.jpg" class="fund-profile-image" alt="" width="100%" height="100%">
+          <img src="./assets/fund/fund-profile.png" class="fund-profile-image" alt="" height="100vh">
 
           <div class="col-md-2 ">
           </div>
@@ -272,13 +217,12 @@
     </section>
     <section>
         <h2 class="text-center font-weight mobile-size my-4">ESG <span class="secondary-color">IMPACT</span></h2>
-        <div style="background-image: url(./assets/fund/GHL-V-WEB-LAYOUT-Fund.3jpg_04.jpg); height: 100vh ;     background-repeat: no-repeat;
-        object-fit: cover;">
+        <div class="background-container-fund">
        
      
       </div>
     </section>
-    <section class="py-5 impact">
+    <section class="py-lg-5 impact">
         <div class="container py-3">
             <div class="row">
                 <div class="col-md-12">
@@ -298,7 +242,7 @@
             </div>
         </div>
     </section>
-    <section class="tab-content-bg">
+    <section class="fund-footer">
       <footer class="footer">
         <div class="container">
           <div class="row">
@@ -339,10 +283,11 @@
             <div class="col-md-3 align">
               <h3 class="text-3">Company</h3>
 
-              <a href="#" class="footer-font-weight">Terms & Conditions</a
-              ><br />
-              <a href="#" class="footer-font-weight">Cookie Policy</a><br />
-              <a href="#" class="footer-font-weight">Privacy Policy</a>
+              <a href="terms.html" class="footer-font-weight">Terms & Conditions</a
+                ><br />
+                <a href="cookie.html" class="footer-font-weight">Cookie Policy</a><br />
+                <a href="privacy.html" class="footer-font-weight">Privacy Policy</a><br />
+                <a href="faq.html" class="footer-font-weight">FAQ</a>
             </div>
           </div>
           <div class="row justify-content-center social-media pt-3">
@@ -367,7 +312,7 @@
               /></a>
             </div>
 
-            <div class="mx-5 pt-3 footer-font-weight">
+            <div class="mx-lg-5 py-3 footer-font-weight-1">
               © 2024 GHL INDIA VENTURES TRUST, All Rights Reserved
             </div>
           </div>
@@ -377,34 +322,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<!-- <img src="./assets/fund/GHL-V-WEB-LAYOUT-Fund_02.jpg" alt=""> -->
     <script src="script.js"></script>
-    <script>
-     
-function updateBackgroundImage() {
-  const container = document.getElementById('backgroundContainer');
-  const desktopImage = 'assets/fund/GHL-V-WEB-LAYOUT-Fund_02.jpg';
-  const mobileImage = 'assets/fund/GHL-V-WEB-LAYOUT-Fund_02.jpg';
-
-  if (window.innerWidth <= 768) {
-    // For mobile view
-    container.style.backgroundImage = `url(${mobileImage})`;
-  } else {
-    // For desktop view
-    container.style.backgroundImage = `url(${desktopImage})`;
-  }
-}
-
-// Update background image on initial load
-updateBackgroundImage();
-
-// Update background image on window resize
-window.addEventListener('resize', updateBackgroundImage);
-
-
-
-   
-   </script>
   </body>
 </html>
 

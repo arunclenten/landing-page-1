@@ -15,77 +15,24 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="home.css">
   </head>
-  <style>
-        #backgroundContainer {
-      width: 100%;
-      height: 60vh; 
-      background-size: cover;
-      background-position: center;
-    }
-  .blog-heading{
-      background-color: gray;
-    color: White;
-    padding: 4px 50px 13px 50px;
-    font-size: 20px;
-    border-radius: 0px 0px 12px 12px;
-    }
-    .card-body{
-      margin-top: -60px;
-    background: #fff;
-    color: black;
-    border-radius: 0px 100px 100px 0px;
-    margin-right: 50px;
-    }
-    .blog-img{
-      height: 40vh !important;
-      border-radius: 20px 20px 0px 0px;
-    }
-    .blog-card{
-      background: #6B6B6B;
-      color: #fff;
-      border-radius: 20px;
-    }
-    .blog-button{
-      color: #fff;
-    padding: 3px 14px;
-    border-radius: 50px;
-    font-size: 20px;
-    text-decoration: none;
-    border: 1px solid;
-    }
-    .blog-button:hover{
-      text-decoration: none;
-      color: #fff;
-    }
-    .blog-card-title{
-      font-weight: 700;
-    }
-  </style>
   <body>
    <!-- Initial Navigation Bar  Start-->
    <header id="initialNav">
     <nav class="navbar navbar-expand-lg sticky-top">
       <div class="container bg-dark navbar-1">
-        <a class="navbar-brand logo-image" href="#">
+        <a class="navbar-brand logo-image" href="index.html">
           <img src="./assets/footer/logoghl.webp" alt="Logo" width="100px" />
         </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon icon-bars"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav font-weight">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="index.html"
-                >Home <span class="sr-only">(current)</span></a
+                >Home </a
               >
             </li>
             <li class="nav-item">
@@ -102,7 +49,7 @@
             </li>
           </ul>
         </div>
-        <a class="nav-link logo-image1" href="#"
+        <a class="nav-link logo-image1" href="login.html"
           ><i class="fa-solid fa-arrow-right-to-bracket text-dark"></i
         ></a>
       </div>
@@ -114,7 +61,7 @@
   <header id="scrolledNav">
     <nav class="navbar navbar-expand-lg navbar-light sticky-top navbar1">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
           <img
             src="./assets/header/GHL_logo.png"
             alt="Logo"
@@ -122,21 +69,13 @@
             width="100px"
           />
         </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon icon-bars"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto font-weight">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            <li class="nav-item ">
+              <a class="nav-link" href="index.html">Home </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about.html">About Us</a>
@@ -151,11 +90,11 @@
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
             <li>
-              <a class="nav-link-login-text" href="login.html">Login</a>
+              <a class="nav-link-login-text login-text" href="login.html">Login</a>
             </li>
           </ul>
         </div>
-        <a class="nav-link nav-link-login-icon" href="#">
+        <a class="nav-link nav-link-login-icon" href="login.html">
           <i class="fa-solid fa-arrow-right-to-bracket text-white"></i>
         </a>
       
@@ -179,10 +118,10 @@
 
 <div class="container py-5">
   <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-6 mb-3">
       <div class="card blog-card">
-        <img src="./assets/home/close-up-coins-black-background.jpg" class="card-img-top blog-img" alt="..." >
-        <div class="card-body me-5">
+        <img src="./assets/blog/blog3.png" class="card-img-top blog-img" alt="..." >
+        <div class="card-body bolg-card-body me-5">
           <h5 class="card-title blog-card-title">Card title</h5>
           <p class="card-text">Some quick example text to build on the card </p>
           
@@ -193,10 +132,10 @@
        </div>
       </div>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-6 mb-3">
       <div class="card blog-card">
-        <img src="./assets/home/close-up-coins-black-background.jpg" class="card-img-top blog-img" alt="...">
-        <div class="card-body me-5">
+        <img src="./assets/blog/blog3.png" class="card-img-top blog-img" alt="...">
+        <div class="card-body bolg-card-body me-5">
           <h5 class="card-title blog-card-title">Card title</h5>
           <p class="card-text">Some quick example text to build on the card </p>
           
@@ -206,21 +145,7 @@
 
        </div>
       </div>
-    </div>
-    <!-- <div class="col-md-4">
-      <div class="card blog-card">
-        <img src="./assets/home/close-up-coins-black-background.jpg" class="card-img-top blog-img" alt="..." height="100%">
-        <div class="card-body me-5">
-          <h5 class="card-title blog-card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card </p>
-          
-        </div> 
-       <div class="d-flex justify-content-between py-3 mx-4">
-        <span class="mt-3">14/06/2024</span>   <a href="#" class="blog-button">+</a>
-
-       </div>
-      </div>
-    </div> -->
+    </div> 
   </div>
 </div>
 </section>
@@ -267,10 +192,11 @@
             <div class="col-md-3 align">
               <h3 class="text-3">Company</h3>
 
-              <a href="#" class="footer-font-weight">Terms & Conditions</a
-              ><br />
-              <a href="#" class="footer-font-weight">Cookie Policy</a><br />
-              <a href="#" class="footer-font-weight">Privacy Policy</a>
+              <a href="terms.html" class="footer-font-weight">Terms & Conditions</a
+                ><br />
+                <a href="cookie.html" class="footer-font-weight">Cookie Policy</a><br />
+                <a href="privacy.html" class="footer-font-weight">Privacy Policy</a><br />
+                <a href="faq.html" class="footer-font-weight">FAQ</a>
             </div>
           </div>
           <div class="row justify-content-center social-media pt-3">
@@ -295,7 +221,7 @@
               /></a>
             </div>
 
-            <div class="mx-5 pt-3 footer-font-weight">
+            <div class="mx-lg-5 py-3 footer-font-weight-1">
               © 2024 GHL INDIA VENTURES TRUST, All Rights Reserved
             </div>
           </div>
@@ -306,33 +232,8 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<!-- <img src="assets/blog/blog-mobile.png" alt=""> -->
+
  <script src="script.js"></script>
- <script>
-
-function updateBackgroundImage() {
-  const container = document.getElementById('backgroundContainer');
-  const desktopImage = 'assets/blog/blog-desk.jpg';
-  const mobileImage = 'assets/blog/blog-mobile.png';
-
-  if (window.innerWidth <= 768) {
-    // For mobile view
-    container.style.backgroundImage = `url(${mobileImage})`;
-  } else {
-    // For desktop view
-    container.style.backgroundImage = `url(${desktopImage})`;
-  }
-}
-
-// Update background image on initial load
-updateBackgroundImage();
-
-// Update background image on window resize
-window.addEventListener('resize', updateBackgroundImage);
-
-
-
-</script>
   </body>
 </html>
 

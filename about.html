@@ -9,75 +9,30 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
     <!-- Font Awesome Custome Link -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="home.css">
   </head>
-  <style>
-      #backgroundContainer {
-      width: 100%;
-      height: 60vh; 
-      background-size: cover;
-      background-position: center;
-    }
-    .blog-heading {
-      background-color: gray;
-      color: White;
-      padding: 4px 50px 13px 50px;
-      font-size: 20px;
-      border-radius: 0px 0px 12px 12px;
-    }
-    #headerSection1 {
-      background-image: url("./assets/about/GHL-V-WEB-LAYOUT-AboutUs_01.jpg");
-      width: 100%;
-      height: 60vh;
-      object-fit: cover;
-      background-repeat: no-repeat;
-    }
-    .about-profile {
-      background-color: black;
-      color: #fff;
-    }
-    .model-btn{
-      border: 1px solid #fff;
-    border-radius: 50px;
-    color: #fff;
-    }
-    .model-btn:hover,button:focus{
-      border: 1px solid #fff;
-    border-radius: 50px;
-    color: #fff;
-    }
-  </style>
   <body>
     <!-- Initial Navigation Bar  Start-->
     <header id="initialNav">
       <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container bg-dark navbar-1">
-          <a class="navbar-brand logo-image" href="#">
+          <a class="navbar-brand logo-image" href="index.html">
             <img src="./assets/footer/logoghl.webp" alt="Logo" width="100px" />
           </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon icon-bars"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav font-weight">
-              <li class="nav-item active">
+              <li class="nav-item ">
                 <a class="nav-link" href="index.html"
-                  >Home <span class="sr-only">(current)</span></a
+                  >Home </a
                 >
               </li>
               <li class="nav-item">
@@ -94,7 +49,7 @@
               </li>
             </ul>
           </div>
-          <a class="nav-link logo-image1" href="#"
+          <a class="nav-link logo-image1" href="login.html"
             ><i class="fa-solid fa-arrow-right-to-bracket text-dark"></i
           ></a>
         </div>
@@ -106,7 +61,7 @@
     <header id="scrolledNav">
       <nav class="navbar navbar-expand-lg navbar-light sticky-top navbar1">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="index.html">
             <img
               src="./assets/header/GHL_logo.png"
               alt="Logo"
@@ -114,22 +69,14 @@
               width="100px"
             />
           </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon icon-bars"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto font-weight">
-              <li class="nav-item active">
+              <li class="nav-item">
                 <a class="nav-link" href="index.html"
-                  >Home <span class="sr-only">(current)</span></a
+                  >Home </a
                 >
               </li>
               <li class="nav-item">
@@ -145,11 +92,11 @@
                 <a class="nav-link" href="contact.html">Contact</a>
               </li>
               <li>
-                <a class="nav-link-login-text" href="login.html">Login</a>
+                <a class="nav-link-login-text login-text" href="login.html">Login</a>
               </li>
             </ul>
           </div>
-          <a class="nav-link nav-link-login-icon" href="#">
+          <a class="nav-link nav-link-login-icon" href="login.html">
             <i class="fa-solid fa-arrow-right-to-bracket text-white"></i>
           </a>
         </div>
@@ -157,42 +104,41 @@
     </header>
     <!-- Scrolled Navigation Bar  End -->
 
-     <!-- Header Section with Background Image  Start-->
-     <div id="backgroundContainer">
-
-     </div>
-     <!-- Header Section with Background Image  End -->
+    <!-- Header Section with Background Image  Start-->
+    <div id="backgroundContainer"></div>
+    <!-- Header Section with Background Image  End -->
     <section class="about-profile">
       <div class="text-center">
         <span class="text-center blog-heading">About Us</span>
       </div>
-      <div class="container py-5">
-        <h2 class="text-center font-weight my-4">OUR  <span class="secondary-color"> CORE TEAM</span></h2>
+      <div class="container py-lg-5">
+        <h2 class="text-center font-weight my-4 mobile-size">
+          OUR <span class="secondary-color"> CORE TEAM</span>
+        </h2>
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-4 mb-3">
             <div class="text-center">
               <img
-                src="./assets/about/GHL-V-WEB-LAYOUT-AboutUs_03.jpg"
+                src="./assets/about/about-profile1.jpg"
                 alt=""
                 width="80%"
               />
               <div class="my-4">
-                <h5>M.Arunclenten</h5>
-                <p>Front end developer</p>
+                <h5>Mr.Naman Danijtha</h5>
+                <p>Fund Manager</p>
                 <!-- Button trigger modal -->
                 <button
                   type="button"
                   class="btn model-btn"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal"
+                  data-toggle="modal"
+                  data-target="#myModal1"
                 >
-                <i class="fa-solid fa-plus"></i>
+                  <i class="fa-solid fa-plus"></i>
                 </button>
-
                 <!-- Modal -->
                 <div
                   class="modal fade"
-                  id="exampleModal"
+                  id="myModal1"
                   tabindex="-1"
                   aria-labelledby="exampleModalLabel"
                   aria-hidden="true"
@@ -200,26 +146,39 @@
                   <div class="modal-dialog">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">
-                          Modal title
-                        </h1>
+                        <h5 class="modal-title font-weight text-dark mobile-size" id="exampleModalLabel">
+                          Mr.Naman <span class="secondary-color"> Danijtha</span> 
+                        </h5>
+                        
+
                         <button
                           type="button"
-                          class="btn-close"
-                          data-bs-dismiss="modal"
+                          class="close"
+                          data-dismiss="modal"
                           aria-label="Close"
-                        ></button>
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
                       </div>
-                      <div class="modal-body">...</div>
+                      
+                      <div class="modal-body">
+                        <p class="text-dark">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolor, exercitationem voluptas aliquid ipsum amet. Saepe aliquam cupiditate nostrum sunt, deleniti dignissimos dolore, libero ipsam quasi facilis aut voluptate impedit.</p>
+                      
+                      <div>
+                    
+                    <a href="#"
+                    ><img src="./assets/footer/linkedin.png" alt="LinkedIn" width="10%"
+                  /></a>
+                      </div>
+                    </div>
                       <div class="modal-footer">
                         <button
                           type="button"
-                          class="btn btn-secondary"
-                          data-bs-dismiss="modal"
+                          class="btn btn-danger"
+                          data-dismiss="modal"
                         >
                           Close
                         </button>
-                      
                       </div>
                     </div>
                   </div>
@@ -227,251 +186,233 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 mb-3">
             <div class="text-center">
               <img
-                src="./assets/about/GHL-V-WEB-LAYOUT-AboutUs_03.jpg"
+                src="./assets/about/about-profile2.jpg"
                 alt=""
                 width="80%"
               />
               <div class="my-4">
-                <h5>M.Arunclenten</h5>
-                <p>Front end developer</p>
+                <h5>Mr.Prabu Kumar</h5>
+                <p>Investment Committee Member</p>
               </div>
+              <!-- Button trigger modal -->
               <button
-              type="button"
-              class="btn model-btn"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
-            >
-            <i class="fa-solid fa-plus"></i>
-            </button>
-
-            <!-- Modal -->
-            <div
-              class="modal fade"
-              id="exampleModal"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">
-                      Modal title
-                    </h1>
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div class="modal-body">...</div>
-                  <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="btn btn-secondary"
-                      data-bs-dismiss="modal"
-                    >
-                      Close
-                    </button>
-                  
+                type="button"
+                class="btn model-btn"
+                data-toggle="modal"
+                data-target="#myModal2"
+              >
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="myModal2"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title font-weight text-dark mobile-size" id="exampleModalLabel">
+                        Mr.Prabu  <span class="secondary-color">Kumar</span> 
+                      </h5>
+                     
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <p class="text-dark">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor illo fugiat provident laboriosam, commodi aut similique! Eum rem, possimus cum nostrum, quasi quaerat veritatis numquam beatae consequuntur assumenda blanditiis provident.</p>
+                      <a href="#"
+                      ><img src="./assets/footer/linkedin.png" alt="LinkedIn" width="10%"
+                    /></a>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-danger"
+                        data-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 mb-3">
             <div class="text-center">
               <img
-                src="./assets/about/GHL-V-WEB-LAYOUT-AboutUs_03.jpg"
+                src="./assets/about/about-profile2.jpg"
                 alt=""
                 width="80%"
               />
               <div class="my-4">
-                <h5>M.Arunclenten</h5>
-                <p>Front end developer</p>
+                <h5>Mr.Arun Justin Robert</h5>
+                <p>Business Development</p>
               </div>
+              <!-- Button trigger modal -->
               <button
-              type="button"
-              class="btn model-btn"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
-            >
-            <i class="fa-solid fa-plus"></i>
-            </button>
-
-            <!-- Modal -->
-            <div
-              class="modal fade"
-              id="exampleModal"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">
-                      Modal title
-                    </h1>
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
+                type="button"
+                class="btn model-btn"
+                data-toggle="modal"
+                data-target="#myModal3"
+              >
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="myModal3"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title font-weight text-dark mobile-size" id="exampleModalLabel">
+                        Mr.Arun  <span class="secondary-color">Justin Robert</span> 
+                      </h5>
+                      
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                    <p class="text-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At aspernatur deserunt labore dolor, aliquam facilis illum recusandae sunt officia molestiae voluptatem enim possimus quis nostrum laborum debitis quia, explicabo sequi.</p>
+                    <a href="#"
+                      ><img src="./assets/footer/linkedin.png" alt="LinkedIn" width="10%"
+                    /></a>
                   </div>
-                  <div class="modal-body">...</div>
-                  <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="btn btn-secondary"
-                      data-bs-dismiss="modal"
-                    >
-                      Close
-                    </button>
-                    
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-danger"
+                        data-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
             </div>
           </div>
         </div>
         <div class="row justify-content-center">
-          <div class="col-md-4">
+          <div class="col-md-4 mb-3">
             <div class="text-center">
               <img
-                src="./assets/about/GHL-V-WEB-LAYOUT-AboutUs_07.jpg"
+                src="./assets/about/about-profile4.jpg"
                 alt=""
                 width="80%"
               />
               <div class="my-4">
-                <h5>M.Arunclenten</h5>
-                <p>Front end developer</p>
+                <h5>Mr.P.Harish Kumar</h5>
+                <p>General Partner</p>
               </div>
-              <button
-              type="button"
-              class="btn model-btn"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
-            >
-            <i class="fa-solid fa-plus"></i>
-            </button>
-
-            <!-- Modal -->
-            <div
-              class="modal fade"
-              id="exampleModal"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">
-                      Modal title
-                    </h1>
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div class="modal-body">...</div>
-                  <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="btn btn-secondary"
-                      data-bs-dismiss="modal"
-                    >
-                      Close
+                      <!-- Button trigger modal --> 
+                      <button type="button" class="btn model-btn" data-toggle="modal" data-target="#myModal4">
+                        <i class="fa-solid fa-plus"></i>
                     </button>
-                   
-                  </div>
+      <!-- Modal -->
+      <div class="modal fade" id="myModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                  
+                    <h5 class="modal-title font-weight text-dark mobile-size" id="exampleModalLabel">
+                      Mr.P.Harish  <span class="secondary-color">Kumar</span> 
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
-              </div>
+                <div class="modal-body">
+                  <p class="text-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At aspernatur deserunt labore dolor, aliquam facilis illum recusandae sunt officia molestiae voluptatem enim possimus quis nostrum laborum debitis quia, explicabo sequi.</p>
+                  <a href="#"
+                    ><img src="./assets/footer/linkedin.png" alt="LinkedIn" width="10%"
+                  /></a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
             </div>
+        </div>
+      </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 mb-3">
             <div class="text-center">
               <img
-                src="./assets/about/GHL-V-WEB-LAYOUT-AboutUs_09.jpg"
+                src="./assets/about/about-profile5.jpg"
                 alt=""
                 width="80%"
               />
               <div class="my-4">
-                <h5>M.Arunclenten</h5>
-                <p>Front end developer</p>
+                <h5>Mr.N.Padmanabhan</h5>
+                <p>General Partner</p>
               </div>
-              <button
-              type="button"
-              class="btn model-btn"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
-            >
-            <i class="fa-solid fa-plus"></i>
-            </button>
-
-            <!-- Modal -->
-            <div
-              class="modal fade"
-              id="exampleModal"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">
-                      Modal title
-                    </h1>
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div class="modal-body">...</div>
-                  <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="btn btn-secondary"
-                      data-bs-dismiss="modal"
-                    >
-                      Close
+                      <!-- Button trigger modal --> 
+                      <button type="button" class="btn model-btn" data-toggle="modal" data-target="#myModal5">
+                        <i class="fa-solid fa-plus"></i>
                     </button>
-                   
-                  </div>
+      <!-- Modal -->
+      <div class="modal fade" id="myModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Mr.N.Padmanabhan</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
-              </div>
+                <div class="modal-body">
+                  <p class="text-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At aspernatur deserunt labore dolor, aliquam facilis illum recusandae sunt officia molestiae voluptatem enim possimus quis nostrum laborum debitis quia, explicabo sequi.</p>
+                  <a href="#"
+                    ><img src="./assets/footer/linkedin.png" alt="LinkedIn" width="10%"
+                  /></a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
             </div>
+        </div>
+      </div>
             </div>
           </div>
         </div>
       </div>
     </section>
     <section>
-      <div class="container py-5">
+      <div class="container py-lg-5">
+        <h2 class="text-center font-weight my-4 mobile-size">
+          CORE<span class="secondary-color"> VALUE</span>
+        </h2>
         <div class="row">
-          <div class="col-md-6 mx-auto">
-            <img
-              src="assets/about/Core Value.png"
-              alt=""
-              width="60%"
-            />
+          
+         
+          <div class="col-md-6 text-center">
+            <img src="assets/about/core-value.png" alt="" class="core-image" />
           </div>
-          <div class="col-md-6">
-            <h3>Arunclenten</h3>
+          <div class="col-md-6 mt-4 about-value">
+            <h3 class="text-center">Arunclenten</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
               vel. Earum quam assumenda quisquam aspernatur provident numquam
@@ -495,10 +436,13 @@
       </div>
     </section>
     <section>
-      <div class="container py-5">
-        <div class="row">
-          <div class="col-md-6">
-            <h3>Arunclenten</h3>
+      <div class="container pb-4 rever">
+        <h2 class="text-center font-weight my-4 mobile-size">
+          TRUSTED<span class="secondary-color"> PARTNERSHIP</span>
+        </h2>
+        <div class="row  ">
+          <div class="col-md-6 mt-4 about-value">
+            <h3 class="text-center">Arunclenten</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
               vel. Earum quam assumenda quisquam aspernatur provident numquam
@@ -518,12 +462,8 @@
               repellendus nesciunt quas quis eaque eius!
             </p>
           </div>
-          <div class="col-md-6">
-            <img
-              src="assets/about/partnership1.png"
-              alt=""
-              width="60%"
-            />
+          <div class="col-md-6 text-center">
+            <img src="assets/about/Partnership.png" alt="" class="core-image" />
           </div>
         </div>
       </div>
@@ -571,10 +511,11 @@
             <div class="col-md-3 align">
               <h3 class="text-3">Company</h3>
 
-              <a href="#" class="footer-font-weight">Terms & Conditions</a
-              ><br />
-              <a href="#" class="footer-font-weight">Cookie Policy</a><br />
-              <a href="#" class="footer-font-weight">Privacy Policy</a>
+              <a href="terms.html" class="footer-font-weight">Terms & Conditions</a
+                ><br />
+                <a href="cookie.html" class="footer-font-weight">Cookie Policy</a><br />
+                <a href="privacy.html" class="footer-font-weight">Privacy Policy</a><br />
+                <a href="faq.html" class="footer-font-weight">FAQ</a>
             </div>
           </div>
           <div class="row justify-content-center social-media pt-3">
@@ -599,7 +540,7 @@
               /></a>
             </div>
 
-            <div class="mx-5 pt-3 footer-font-weight">
+            <div class="mx-lg-5 py-3 footer-font-weight-1">
               © 2024 GHL INDIA VENTURES TRUST, All Rights Reserved
             </div>
           </div>
@@ -610,32 +551,9 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<!-- <img src="assets/about/About-mobile.png" alt=""> -->
     <script src="script.js"></script>
-    <script>
-   
-      
-function updateBackgroundImage() {
-  const container = document.getElementById('backgroundContainer');
-  const desktopImage = 'assets/about/GHL-V-WEB-LAYOUT-AboutUs_01.jpg';
-  const mobileImage = 'assets/about/About-mobile.png';
-
-  if (window.innerWidth <= 768) {
-    // For mobile view
-    container.style.backgroundImage = `url(${mobileImage})`;
-  } else {
-    // For desktop view
-    container.style.backgroundImage = `url(${desktopImage})`;
-  }
-}
-
-// Update background image on initial load
-updateBackgroundImage();
-
-// Update background image on window resize
-window.addEventListener('resize', updateBackgroundImage);
-    
-    </script>
+  <script>
+     
+  </script>
   </body>
 </html>

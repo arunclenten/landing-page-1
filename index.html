@@ -13,88 +13,25 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="home.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
-  <style>
-    @media (max-width:600px){
-      #headerSection {
-    width: 100%;
-    height: 58vh !important;
-    background-size: 150%;
-    background-position: center;
-    transition: background-size 5s;
-}
-.overlay {
-    position: absolute;
-    top: 61%;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    text-align: center;
-    z-index: 1;
-}
-    }
-    .carousel-inner img {
-            width: 100%;
-        height: 100vh;
-        }
-        .carousel-caption {
-            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        @media (max-width: 767px) {
-            .carousel-inner img {
-              height: 326px;
-              margin-top: 53px;
-            }
-        }
-        .carousel-indicators {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 15;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-    justify-content: center;
-    padding-left: 0;
-    margin-right: 15%;
-    margin-left: 15%;
-    list-style: none;
-    display: none;
-}
-  </style>
   <body>
     <!-- Initial Navigation Bar  Start-->
     <header id="initialNav">
       <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container bg-dark navbar-1">
-          <a class="navbar-brand logo-image" href="#">
+          <a class="navbar-brand logo-image" href="index.html">
             <img src="./assets/footer/logoghl.webp" alt="Logo" width="100px" />
           </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon icon-bars"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav font-weight">
-              <li class="nav-item active">
+              <li class="nav-item ">
                 <a class="nav-link" href="index.html"
-                  >Home <span class="sr-only">(current)</span></a
+                  >Home </a
                 >
               </li>
               <li class="nav-item">
@@ -111,7 +48,7 @@
               </li>
             </ul>
           </div>
-          <a class="nav-link logo-image1" href="#"
+          <a class="nav-link logo-image1" href="login.html"
             ><i class="fa-solid fa-arrow-right-to-bracket text-dark"></i
           ></a>
         </div>
@@ -123,7 +60,7 @@
     <header id="scrolledNav">
       <nav class="navbar navbar-expand-lg navbar-light sticky-top navbar1">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="index.html">
             <img
               src="./assets/header/GHL_logo.png"
               alt="Logo"
@@ -131,21 +68,13 @@
               width="100px"
             />
           </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon icon-bars"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto font-weight">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              <li class="nav-item ">
+                <a class="nav-link" href="index.html">Home </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="about.html">About Us</a>
@@ -159,12 +88,13 @@
               <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contact</a>
               </li>
-              <li>
-                <a class="nav-link-login-text" href="login.html">Login</a>
+              <li >
+                <a href="login.html" class="nav-link-login-text login-text">Login</a>
               </li>
             </ul>
+           
           </div>
-          <a class="nav-link nav-link-login-icon" href="#">
+          <a class="nav-link nav-link-login-icon" href="login.html">
             <i class="fa-solid fa-arrow-right-to-bracket text-white"></i>
           </a>
         
@@ -182,33 +112,29 @@
       </ol>
       <div class="carousel-inner">
           <div class="carousel-item active">
-              <img src="assets/home/home1.png" class="d-block w-100 d-sm-none" alt="Mobile Image 1">
-              <img src="desktop_image1.jpg" class="d-none d-sm-block d-md-none" alt="Tablet Image 1">
-              <img src="assets/home/GHL-V-WEB-LAYOUT-HOME_08_01.jpg" class="d-none d-md-block" alt="Desktop Image 1">
+              <img src="assets/home/home-mobile-1.png" class="d-block w-100 d-sm-none" alt="Mobile Image 1">
+              <img src="assets/home/home-destop-1.jpg" class="d-none d-md-block" alt="Desktop Image 1">
               <div class="overlay">
                   <h1 class="font-weight mobile-size" id="heroText"></h1>
                 </div>
           </div>
           <div class="carousel-item">
-              <img src="assets/home/home2.png" class="d-block w-100 d-sm-none" alt="Mobile Image 2">
-              <img src="desktop_image2.jpg" class="d-none d-sm-block d-md-none" alt="Tablet Image 2">
-              <img src="assets/home/GHL-V-WEB-LAYOUT-HOME_7jpg_01.jpg" class="d-none d-md-block" alt="Desktop Image 2">
+              <img src="assets/home/home-mobile-2.png" class="d-block w-100 d-sm-none" alt="Mobile Image 2">
+              <img src="assets/home/home-destop-2.jpg" class="d-none d-md-block" alt="Desktop Image 2">
               <div class="overlay">
                   <h1 class="font-weight mobile-size" id="heroText1">REMARKABLE <span class="secondary-color">WEALTH CREATION</span>  <br> THROUGH DISTRUPTION INNOVATION</h1>
                 </div>
           </div>
           <div class="carousel-item">
-              <img src="assets/home/home3.png" class="d-block w-100 d-sm-none" alt="Mobile Image 3">
-              <img src="desktop_image3.jpg" class="d-none d-sm-block d-md-none" alt="Tablet Image 3">
-              <img src="assets/home/GHL-V-WEB-LAYOUT-HOME_05_01.jpg" class="d-none d-md-block" alt="Desktop Image 3">
+              <img src="assets/home/home-mobile-3.png" class="d-block w-100 d-sm-none" alt="Mobile Image 3">
+              <img src="assets/home/home-destop-3.jpg" class="d-none d-md-block" alt="Desktop Image 3">
               <div class="overlay">
                   <h1 class="font-weight mobile-size" id="heroText2">BEYOND <span class="secondary-color">CAPITAL</span>  <br> WE <span class="secondary-color">INVEST</span>  IN POTENTIAL</h1>
                 </div>
           </div>
           <div class="carousel-item">
-            <img src="assets/home/home4.png" class="d-block w-100 d-sm-none" alt="Mobile Image 4">
-            <img src="desktop_image3.jpg" class="d-none d-sm-block d-md-none" alt="Tablet Image 4">
-            <img src="assets/home/GHL-V-WEB-LAYOUT-HOME_06_01.jpg" class="d-none d-md-block" alt="Desktop Image 4">
+            <img src="assets/home/home-mobile-4.png" class="d-block w-100 d-sm-none" alt="Mobile Image 4">
+            <img src="assets/home/home-destop-4.jpg" class="d-none d-md-block" alt="Desktop Image 4">
             <div class="overlay">
                 <h1 class="font-weight mobile-size" id="heroText3">EARLY STAGE EXTRAORDINARY RETURNS: <br> PARTENR WITH <span class="secondary-color">GHL</span> INDIA VENTURES </h1>
               </div>
@@ -224,7 +150,7 @@
       </a>
   </div>
     <section class="home-section">
-      <h2 class="text-center text-white py-lg-5 py-3 font-weight mobile-size1">
+      <h2 class="text-center text-white py-lg-5 py-3 font-weight mobile-size">
         UNPARALLELED <span class="secondary-color">ACCESS ,</span> AMPLIFIED
         <span class="secondary-color">GROWT</span>
       </h2>
@@ -232,7 +158,7 @@
         
         <div class="row ">
           <div class="col-md-12 py-lg-5 ">
-            <div class="box section-1">
+            <div class="box section-1 mb-5">
               <p class="text-white pb-lg-4">
                 <span class="color "> GHL India Ventures</span> , a
                 SEBI-registered Category-II Alternate Investment Fund, caters to
@@ -261,27 +187,27 @@
         </div>
       </div>
     </section>
-    <section class="my-5 mx-2">
+    <section class="my-lg-5 my-3 mx-2">
       <div class="container bg-Secondary">
         <div class="row box-1">
           <div class="col-md-4 text-center">
-            <img src="./assets/home/Gem.png" alt="" width="15%" />
+            <img src="./assets/home/Gem.png" alt=""   class="home-icon"/>
             <h4 class="counter pt-3" data-final-value="100"><span class="count">0</span>+</h4>
             <p class="color1">MAN-YEARS OF EXPERIENCE</p>
           </div>
           <div class="col-md-4 text-center">
-            <img src="./assets/home/Team.png" alt="" width="15%" />
-            <h4 class="counter pt-3" data-final-value="500"><span class="count">0</span>$</h4>
+            <img src="./assets/home/Team.png" alt="" class="home-icon"/>
+            <h4 class="counter pt-3" data-final-value="500">$<span class="count">0</span></h4>
             <p class="color1">VALUE CREATED</p>
           </div>
           <div class="col-md-4 text-center">
-            <img src="./assets/home/Tick.png" alt="" width="15%" />
+            <img src="./assets/home/Tick.png" alt="" class="home-icon"/>
             <h4 class="counter pt-3" data-final-value="2000"><span class="count">0</span></h4>
             <p class="color1">DECK PITCH ANALYSE</p>
           </div>
         </div>
       </div>
-      <h2 class="text-center font-weight my-5 mobile-size">
+      <h2 class="text-center font-weight my-lg-5 my-4 mobile-size">
         INVESTMENT <span class="secondary-color">CAPABILITIES</span>
       </h2>
     </section>
@@ -337,11 +263,11 @@
                     exceeds its current market price.
                   </p>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 text-center">
                   <img
-                    src="./assets/home/Value-Investing.jpg"
+                    src="./assets/home/Value-Investing.png"
                     alt=""
-                    width="100%"
+                    width="75%"
                     class="imageborder"
                   />
                 </div>
@@ -366,11 +292,11 @@
                     and the implementation of robust risk management frameworks.
                   </p>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 text-center">
                   <img
-                  src="./assets/home/Risk.jpg"
+                  src="./assets/home/Risk.png"
                     alt=""
-                    width="100%"
+                    width="75%"
                     class="imageborder"
                   />
                 </div>
@@ -397,11 +323,11 @@
                     positioning, and the caliber of its management team.
                   </p>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 text-center">
                   <img
-                  src="./assets/home/Fundamental-Analysis.jpg"
+                  src="./assets/home/Fundamental-Analysis.png"
                     alt=""
-                    width="100%"
+                    width="75%"
                     class="imageborder"
                   />
                 </div>
@@ -425,11 +351,11 @@
                     capitalize on emerging investment opportunities.
                   </p>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 text-center">
                   <img
-                  src="./assets/home/Liquidity-Management.jpg"
+                  src="./assets/home/Liquidity-Management.png"
                     alt=""
-                    width="100%"
+                    width="75%"
                     class="imageborder"
                   />
                 </div>
@@ -453,11 +379,11 @@
                     culture of accountability.
                   </p>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 text-center">
                   <img
-                  src="./assets/home/Transparency-and-Accountability.jpg"
+                  src="./assets/home/Transparency-and-Accountability.png"
                     alt=""
-                    width="100%"
+                    width="75%"
                     class="imageborder"
                   />
                 </div>
@@ -481,11 +407,11 @@
                     investing principles.
                   </p>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 text-center">
                   <img
-                  src="./assets/home/Ethical-Considerations.jpg"
+                  src="./assets/home/Ethical-Considerations.png"
                     alt=""
-                    width="100%"
+                    width="75%"
                     class="imageborder"
                   />
                 </div>
@@ -533,9 +459,11 @@
             <div class="col-md-3 align">
               <h3 class="text-3">Company</h3>
 
-              <a href="#" class="footer-font-weight">Terms & Conditions</a><br />
-              <a href="#" class="footer-font-weight">Cookie Policy</a><br />
-              <a href="#" class="footer-font-weight">Privacy Policy</a>
+              <a href="terms.html" class="footer-font-weight">Terms & Conditions</a
+                ><br />
+                <a href="cookie.html" class="footer-font-weight">Cookie Policy</a><br />
+                <a href="privacy.html" class="footer-font-weight">Privacy Policy</a><br />
+                <a href="faq.html" class="footer-font-weight">FAQ</a>
             </div>
           </div>
           <div class="row justify-content-center social-media pt-3">
@@ -548,7 +476,7 @@
               <a href="#"><img src="./assets/footer/whatsapp.png" alt="whatsapp" /></a>
             </div>
 
-            <div class="mx-lg-5 mx-4 pt-3 footer-font-weight-1">
+            <div class="mx-lg-5 mx-4 py-3 footer-font-weight-1">
               © 2024 GHL INDIA VENTURES TRUST, All Rights Reserved
             </div>
           </div>
@@ -557,91 +485,9 @@
     </section>
      <!-- Footer Section End  -->
      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-     <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
     <script src="script.js"></script>
-    <!-- <img src="assets/home/home1.png" alt=""> -->
-    <script>
-       document.addEventListener('DOMContentLoaded', function() {
-        // Typed.js configuration
-        function initTypedEffect(element, text) {
-            new Typed(element, {
-                strings: [text],
-                typeSpeed: 50, // Speed in milliseconds to type a character
-                startDelay: 500, // Time before typing starts in milliseconds
-                showCursor: false // Hide the typing cursor
-            });
-        }
-
-        // Initialize Typed.js for each slide on page load
-        function initializeTypedCaptions() {
-            document.querySelectorAll('.carousel-item').forEach((slide, index) => {
-                const caption = slide.querySelector('.carousel-caption .typed-text');
-                if (caption) {
-                    const text = caption.innerText.trim(); // Get the caption text
-                    initTypedEffect(caption, text);
-                }
-            });
-        }
-
-        // Initialize Typed.js for the first slide on page load
-        initializeTypedCaptions();
-
-       
-
-        // Auto slide functionality
-        $('#carouselExampleIndicators').carousel({
-            interval: 5000, // Auto slide interval in milliseconds (5 seconds)
-            pause: 'hover' // Pause on mouse hover
-        });
-    });
-    document.addEventListener("DOMContentLoaded", function () {
-    var text = "INNOVATION. INVESTMENT. GROWTH. GHL INDIA VENTURES ";
-    var heroText = document.getElementById("heroText");
-    heroText.innerHTML = "";
-
-    var words = text.split(" ");
-    var index = 0;
-
-    function typeWriter() {
-        if (index < words.length) {
-            var word = words[index++];
-            if (word === "GHL") {
-                heroText.innerHTML += '<br><span class="ghl">' + word + "</span> ";
-            } else {
-                heroText.innerHTML += word + " ";
-            }
-            setTimeout(typeWriter, 700); // Adjust the speed by changing the timeout value
-        }
-    }
-
-    typeWriter();
-});
-
-$(document).ready(function() {
-    $('.counter').each(function() {
-        var $this = $(this);
-        var finalValue = parseInt($this.attr('data-final-value'), 10);
-        var currentValue = 0;
-
-        // Start counter animation
-        $({ countValue: currentValue }).animate({ countValue: finalValue }, {
-            duration: 2000,  // Adjust duration as needed
-            easing: 'linear',
-            step: function() {
-                $this.find('.count').text(Math.floor(this.countValue));
-            },
-            complete: function() {
-                $this.find('.count').text(finalValue); // Ensure final value is set correctly
-            }
-        });
-    });
-});
-
-
-    </script>
-   
   </body>
 </html>
